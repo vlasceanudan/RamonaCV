@@ -332,7 +332,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             București, Romania
           </a>
-          <a href="#" class="hc-item" id="linkedin-link">
+          <a href="https://www.linkedin.com/in/alexandra-ramona-sima/" class="hc-item" id="linkedin-link" target="_blank" rel="noopener noreferrer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
@@ -790,7 +790,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
     <div class="contact-grid">
       <!-- Form -->
       <div data-aos="fade-right">
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" id="contact-form" action="" method="POST" data-form-endpoint="">
           <div class="form-row">
             <div class="form-group">
               <label for="f-name" data-i18n="f_name_lbl">Name</label>
@@ -850,7 +850,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
           </div>
           <div class="cd-content">
             <div class="cd-lbl">LinkedIn</div>
-            <div class="cd-val"><a href="#" id="linkedin-link2" style="color:var(--ac)">linkedin.com/in/alexandra-ramona-sima</a></div>
+            <div class="cd-val"><a href="https://www.linkedin.com/in/alexandra-ramona-sima/" id="linkedin-link2" style="color:var(--ac)" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandra-ramona-sima</a></div>
           </div>
         </div>
         <div class="cd-item" style="background:var(--ac-s);border:1px solid rgba(var(--ac-r),.25)">
@@ -1372,6 +1372,40 @@ document.addEventListener('DOMContentLoaded', () => {
   // Contact form
   const form = document.getElementById('contact-form');
   const formMsg = document.getElementById('form-msg');
+  const contactEmail = 'sima.alexandra.ramona@gmail.com';
+  const configuredEndpoint = (form.dataset.formEndpoint || form.getAttribute('action') || '').trim();
+  const hasRemoteFormHandler = configuredEndpoint && !configuredEndpoint.includes('YOUR_FORM_ID');
+
+  function showFormMessage(kind) {
+    formMsg.style.display = 'block';
+    if (kind === 'success') {
+      formMsg.style.background = 'rgba(var(--ac-r),.1)';
+      formMsg.style.borderColor = 'rgba(var(--ac-r),.3)';
+      formMsg.style.color = 'var(--ac)';
+      formMsg.textContent = lang === 'en' ? 'âœ“ Message sent! I\'ll get back to you soon.' : 'âœ“ Mesaj trimis! Voi reveni Ã®n curÃ¢nd.';
+      return;
+    }
+    formMsg.style.background = 'rgba(247,129,102,.1)';
+    formMsg.style.borderColor = 'rgba(247,129,102,.3)';
+    formMsg.style.color = '#F78166';
+    formMsg.textContent = lang === 'en' ? 'Something went wrong. Please email directly.' : 'A apÄƒrut o eroare. VÄƒ rog contactaÈ›i direct.';
+  }
+
+  function openMailClient() {
+    const name = form.elements.name.value.trim();
+    const email = form.elements.email.value.trim();
+    const subject = form.elements.subject.value.trim();
+    const message = form.elements.message.value.trim();
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      message
+    ].join('\n');
+    const mailtoUrl = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type=submit]');
@@ -1395,6 +1429,82 @@ document.addEventListener('DOMContentLoaded', () => {
       formMsg.style.borderColor = 'rgba(247,129,102,.3)';
       formMsg.style.color = '#F78166';
       formMsg.textContent = lang === 'en' ? 'Something went wrong. Please email directly.' : 'A apărut o eroare. Vă rog contactați direct.';
+    }
+    btn.disabled = false;
+    btn.textContent = T[lang].f_send;
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const originalForm = document.getElementById('contact-form');
+  if (!originalForm) return;
+
+  const form = originalForm.cloneNode(true);
+  originalForm.replaceWith(form);
+
+  const formMsg = document.getElementById('form-msg');
+  const contactEmail = 'sima.alexandra.ramona@gmail.com';
+  const configuredEndpoint = (form.dataset.formEndpoint || form.getAttribute('action') || '').trim();
+  const hasRemoteFormHandler = configuredEndpoint && !configuredEndpoint.includes('YOUR_FORM_ID');
+
+  function showFormMessage(kind) {
+    formMsg.style.display = 'block';
+    if (kind === 'success') {
+      formMsg.style.background = 'rgba(var(--ac-r),.1)';
+      formMsg.style.borderColor = 'rgba(var(--ac-r),.3)';
+      formMsg.style.color = 'var(--ac)';
+      formMsg.textContent = lang === 'en'
+        ? '\u2713 Message sent! I\'ll get back to you soon.'
+        : '\u2713 Mesaj trimis! Voi reveni in curand.';
+      return;
+    }
+    formMsg.style.background = 'rgba(247,129,102,.1)';
+    formMsg.style.borderColor = 'rgba(247,129,102,.3)';
+    formMsg.style.color = '#F78166';
+    formMsg.textContent = lang === 'en'
+      ? 'Something went wrong. Please email directly.'
+      : 'A aparut o eroare. Va rog contactati direct.';
+  }
+
+  function openMailClient() {
+    const name = form.elements.name.value.trim();
+    const email = form.elements.email.value.trim();
+    const subject = form.elements.subject.value.trim();
+    const message = form.elements.message.value.trim();
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      message
+    ].join('\n');
+    const mailtoUrl = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type=submit]');
+    btn.textContent = '...';
+    btn.disabled = true;
+    formMsg.style.display = 'none';
+    try {
+      if (hasRemoteFormHandler) {
+        const res = await fetch(configuredEndpoint, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        if (!res.ok) {
+          throw new Error();
+        }
+      } else {
+        openMailClient();
+      }
+      showFormMessage('success');
+      form.reset();
+    } catch {
+      showFormMessage('error');
     }
     btn.disabled = false;
     btn.textContent = T[lang].f_send;
