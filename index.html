@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 <style>
 /* ── TOKENS ── */
@@ -191,6 +192,34 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .proj-skills{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:1.1rem}
 
 /* ── CONTACT ── */
+.map-shell{padding:1.5rem}
+.map-toolbar{display:flex;gap:1rem;justify-content:space-between;align-items:end;flex-wrap:wrap;margin-bottom:1rem}
+.map-filters{display:flex;gap:.9rem;flex-wrap:wrap;flex:1}
+.map-filter{display:flex;flex-direction:column;gap:.35rem;min-width:220px}
+.map-filter label{font-size:.78rem;font-weight:600;color:var(--tx2)}
+.map-filter select{background:var(--bg3);border:1px solid var(--bd);border-radius:8px;padding:.7rem .875rem;color:var(--tx);font-family:var(--ff);font-size:.9rem;outline:none;transition:border-color .2s,box-shadow .2s}
+.map-filter select:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(var(--ac-r),.12)}
+.map-summary{font-size:.9rem;color:var(--tx2);font-weight:500;padding:.7rem .95rem;border-radius:999px;background:var(--bg3);border:1px solid var(--bd);white-space:nowrap}
+.project-map-canvas{height:520px;border-radius:14px;overflow:hidden;border:1px solid var(--bd);background:linear-gradient(135deg,var(--bg3),var(--bg2))}
+.map-note{margin-top:.9rem;font-size:.82rem;color:var(--tx2)}
+.leaflet-container{font-family:var(--ff);background:var(--bg3)}
+.leaflet-control-attribution{background:rgba(13,17,23,.82)!important;color:var(--tx2)!important}
+.leaflet-control-attribution a{color:var(--ac)!important}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--bg2);color:var(--tx);border:1px solid var(--bd)}
+.leaflet-popup-content{margin:0;min-width:260px}
+.map-popup{padding:1rem}
+.map-popup-head{display:flex;justify-content:space-between;align-items:start;gap:.75rem;margin-bottom:.85rem}
+.map-popup-place{font-size:1rem;font-weight:700;color:var(--tx);line-height:1.3}
+.map-popup-county{font-size:.78rem;color:var(--tx2);margin-top:.15rem}
+.map-popup-count{padding:.2rem .55rem;border-radius:999px;background:var(--ac-s);border:1px solid rgba(var(--ac-r),.28);color:var(--ac);font-size:.74rem;font-weight:700;white-space:nowrap}
+.map-popup-projects{display:flex;flex-direction:column;gap:.75rem}
+.map-popup-project{padding-top:.75rem;border-top:1px solid var(--bd)}
+.map-popup-project:first-child{padding-top:0;border-top:none}
+.map-popup-title{font-size:.86rem;font-weight:600;color:var(--tx);line-height:1.5;margin-bottom:.4rem}
+.map-popup-meta{display:flex;flex-wrap:wrap;gap:.35rem}
+.map-popup-pill{display:inline-flex;align-items:center;padding:.18rem .48rem;border-radius:999px;background:var(--bg3);border:1px solid var(--bd);font-size:.72rem;color:var(--tx2)}
+.map-popup-beneficiary{margin-top:.45rem;font-size:.76rem;color:var(--tx2);line-height:1.5}
+.map-empty{display:flex;align-items:center;justify-content:center;height:100%;font-size:.95rem;color:var(--tx2);text-align:center;padding:1.5rem}
 .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:3rem}
 .contact-form{display:flex;flex-direction:column;gap:.875rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:.875rem}
@@ -250,6 +279,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
   .contact-grid{grid-template-columns:1fr}
   .skills-grid{grid-template-columns:1fr}
   .chart-wrap{height:260px}
+  .map-toolbar{align-items:stretch}
+  .map-summary{white-space:normal}
 }
 @media(max-width:768px){
   .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--bd);padding:1rem;flex-direction:column;gap:.25rem;z-index:999}
@@ -258,6 +289,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
   .hamburger{display:flex}
   .timeline::before{left:20px}
   .tl-dot{left:20px}
+  .project-map-canvas{height:420px}
+  .map-filter{min-width:100%}
   .tl-item:nth-child(odd) .tl-card,.tl-item:nth-child(even) .tl-card{margin-left:44px;width:calc(100% - 44px)}
   .edu-grid,.certs-grid{grid-template-columns:1fr}
   .metrics-grid{grid-template-columns:repeat(2,1fr)}
@@ -781,6 +814,32 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
 </section>
 
 <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section id="project-map-section" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="map_title">Project Map</h2>
+      <p data-i18n="map_sub">Explore the national footprint of cadastral and engineering projects across Romania.</p>
+    </div>
+    <div class="card map-shell" data-aos="fade-up" data-aos-delay="80">
+      <div class="map-toolbar">
+        <div class="map-filters">
+          <div class="map-filter">
+            <label for="map-county-filter" data-i18n="map_filter_county">County</label>
+            <select id="map-county-filter" aria-label="County filter"></select>
+          </div>
+          <div class="map-filter">
+            <label for="map-type-filter" data-i18n="map_filter_type">Work Type</label>
+            <select id="map-type-filter" aria-label="Work type filter"></select>
+          </div>
+        </div>
+        <div class="map-summary" id="map-summary" data-i18n="map_loading">Loading project map...</div>
+      </div>
+      <div id="project-map-canvas" class="project-map-canvas" role="region" aria-label="Project locations map"></div>
+      <div class="map-note" data-i18n="map_note">Markers group projects by UAT and county. Use the filters to narrow the visible portfolio.</div>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="section section-alt">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
@@ -891,6 +950,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/projects-map-data.js"></script>
 <script>
 /* ── TRANSLATIONS ── */
 const T = {
@@ -963,6 +1024,12 @@ const T = {
     p3_tag:'Research & Geodesy', p3_title:'Geodetic Research — Romanian Academy',
     p3_desc:'Contributed to national and international geodetic research projects at the Geodinamics Institute, conducting geospatial data analysis and co-authoring scientific documentation over 3.5 years.',
     p3_out:'National & international research contributions · Scientific publications',
+    map_title:'Project Map', map_sub:'Explore the national footprint of cadastral and engineering projects across Romania.',
+    map_filter_county:'County', map_filter_type:'Work Type', map_all_counties:'All counties', map_all_types:'All work types',
+    map_loading:'Loading project map...', map_error:'The project map could not be loaded right now.',
+    map_note:'Markers group projects by UAT and county. Use the filters to narrow the visible portfolio.',
+    map_no_results:'No projects match the selected filters.', map_projects_here:'projects here',
+    map_popup_period:'Period', map_popup_type:'Type', map_popup_surface:'Surface', map_popup_properties:'Properties', map_popup_beneficiary:'Beneficiary',
     contact_title:'Get In Touch', contact_sub:"Interested in working together? I'd love to hear from you.",
     f_name_lbl:'Name', f_name_ph:'Your name', f_email_lbl:'Email', f_email_ph:'your@email.com',
     f_subj_lbl:'Subject', f_msg_lbl:'Message', f_msg_ph:'Your message...', f_send:'Send Message',
@@ -1043,6 +1110,12 @@ const T = {
     p3_tag:'Cercetare & Geodezie', p3_title:'Cercetare Geodezică — Academia Română',
     p3_desc:'Contribuit la proiecte de cercetare geodezică naționale și internaționale la Institutul de Geodinamică, realizând analize de date geospațiale și co-autorând documentație științifică pe parcursul a 3,5 ani.',
     p3_out:'Contribuții cercetare națională & internațională · Publicații științifice',
+    map_title:'Harta Proiectelor', map_sub:'Exploreaza amprenta nationala a proiectelor de cadastru si topografie inginereasca din Romania.',
+    map_filter_county:'Judet', map_filter_type:'Tip lucrare', map_all_counties:'Toate judetele', map_all_types:'Toate tipurile de lucrari',
+    map_loading:'Se incarca harta proiectelor...', map_error:'Harta proiectelor nu a putut fi incarcata acum.',
+    map_note:'Marcatorii grupeaza proiectele dupa UAT si judet. Foloseste filtrele pentru a restrange portofoliul vizibil.',
+    map_no_results:'Nu exista proiecte pentru filtrele selectate.', map_projects_here:'proiecte aici',
+    map_popup_period:'Perioada', map_popup_type:'Tip', map_popup_surface:'Suprafata', map_popup_properties:'Imobile', map_popup_beneficiary:'Beneficiar',
     contact_title:'Contactează-mă', contact_sub:'Ești interesat să lucrăm împreună? Aș fi bucuroasă să te aud.',
     f_name_lbl:'Nume', f_name_ph:'Numele tău', f_email_lbl:'Email', f_email_ph:'email@tau.com',
     f_subj_lbl:'Subiect', f_msg_lbl:'Mesaj', f_msg_ph:'Mesajul tău...', f_send:'Trimite Mesaj',
@@ -1061,6 +1134,22 @@ let lang = localStorage.getItem('lang') || 'en';
 let theme = localStorage.getItem('theme') || 'dark';
 let typedInstance = null;
 let radarChart = null;
+let projectMap = null;
+let projectMapLayer = null;
+let projectMapBaseLayer = null;
+let projectMapData = [];
+let projectMapLoaded = false;
+const mapDefaultView = { center: [45.9432, 24.9668], zoom: 6 };
+const workTypeLabels = {
+  'Lucrare de înregistrare sistematică': {
+    en: 'Systematic registration project',
+    ro: 'Lucrare de înregistrare sistematică'
+  },
+  'Lucrare de topografie inginerească': {
+    en: 'Engineering surveying project',
+    ro: 'Lucrare de topografie inginerească'
+  }
+};
 
 /* ── APPLY THEME ── */
 function applyTheme(t) {
@@ -1069,6 +1158,8 @@ function applyTheme(t) {
   document.getElementById('theme-btn').textContent = t === 'dark' ? '☀️' : '🌙';
   localStorage.setItem('theme', t);
   if (radarChart) updateChartTheme();
+  if (projectMap) updateProjectMapBaseLayer();
+  if (projectMap) setTimeout(() => projectMap.invalidateSize(), 50);
 }
 
 /* ── APPLY LANGUAGE ── */
@@ -1104,6 +1195,7 @@ function applyLang(l) {
     radarChart.data.labels = tx.radar_labels;
     radarChart.update();
   }
+  refreshProjectMapUI();
 }
 
 /* ── CHART ── */
@@ -1150,6 +1242,187 @@ function updateChartTheme() {
   radarChart.options.scales.r.angleLines.color = gridColor;
   radarChart.options.scales.r.pointLabels.color = labelColor;
   radarChart.update();
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function translateWorkType(workType) {
+  return workTypeLabels[workType]?.[lang] || workType;
+}
+
+function getProjectMapTileConfig() {
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+  const style = isDark ? 'dark_all' : 'light_all';
+  return {
+    url: `https://{s}.basemaps.cartocdn.com/${style}/{z}/{x}/{y}{r}.png`,
+    options: {
+      subdomains: 'abcd',
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+    }
+  };
+}
+
+function updateProjectMapBaseLayer() {
+  if (!projectMap || !window.L) return;
+  const tileConfig = getProjectMapTileConfig();
+  if (projectMapBaseLayer) {
+    projectMap.removeLayer(projectMapBaseLayer);
+  }
+  projectMapBaseLayer = L.tileLayer(tileConfig.url, tileConfig.options).addTo(projectMap);
+}
+
+function formatMapSummary(projectCount, locationCount) {
+  return lang === 'en'
+    ? `${projectCount} projects across ${locationCount} mapped locations`
+    : `${projectCount} proiecte in ${locationCount} locatii mapate`;
+}
+
+function formatMapMetric(label, value) {
+  return `<span class="map-popup-pill">${escapeHtml(label)}: ${escapeHtml(value)}</span>`;
+}
+
+function buildProjectPopup(group) {
+  const tx = T[lang];
+  const projects = group.projects.map((project) => {
+    const metrics = [];
+    if (project.period) metrics.push(formatMapMetric(tx.map_popup_period, project.period));
+    if (project.workType) metrics.push(formatMapMetric(tx.map_popup_type, translateWorkType(project.workType)));
+    if (project.surfaceHa !== null) metrics.push(formatMapMetric(tx.map_popup_surface, `${project.surfaceHa} ha`));
+    if (project.propertyCount !== null) metrics.push(formatMapMetric(tx.map_popup_properties, project.propertyCount));
+    const beneficiary = project.beneficiary
+      ? `<div class="map-popup-beneficiary"><strong>${escapeHtml(tx.map_popup_beneficiary)}:</strong> ${escapeHtml(project.beneficiary)}</div>`
+      : '';
+    return `
+      <div class="map-popup-project">
+        <div class="map-popup-title">${escapeHtml(project.title)}</div>
+        <div class="map-popup-meta">${metrics.join('')}</div>
+        ${beneficiary}
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <div class="map-popup">
+      <div class="map-popup-head">
+        <div>
+          <div class="map-popup-place">${escapeHtml(group.uat)}</div>
+          <div class="map-popup-county">${escapeHtml(group.county)}</div>
+        </div>
+        <div class="map-popup-count">${group.projectCount} ${escapeHtml(tx.map_projects_here)}</div>
+      </div>
+      <div class="map-popup-projects">${projects}</div>
+    </div>
+  `;
+}
+
+function populateProjectMapFilters() {
+  const countySelect = document.getElementById('map-county-filter');
+  const typeSelect = document.getElementById('map-type-filter');
+  if (!countySelect || !typeSelect || !projectMapData.length) return;
+
+  const countyValue = countySelect.value || '';
+  const typeValue = typeSelect.value || '';
+  const counties = [...new Set(projectMapData.map((group) => group.county))].sort((a, b) => a.localeCompare(b, 'ro'));
+  const types = [...new Set(projectMapData.flatMap((group) => group.workTypes || []))].sort((a, b) => a.localeCompare(b, 'ro'));
+
+  countySelect.innerHTML = `<option value="">${escapeHtml(T[lang].map_all_counties)}</option>${counties.map((county) => `<option value="${escapeHtml(county)}">${escapeHtml(county)}</option>`).join('')}`;
+  typeSelect.innerHTML = `<option value="">${escapeHtml(T[lang].map_all_types)}</option>${types.map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(translateWorkType(type))}</option>`).join('')}`;
+
+  countySelect.value = counties.includes(countyValue) ? countyValue : '';
+  typeSelect.value = types.includes(typeValue) ? typeValue : '';
+}
+
+function getFilteredProjectMapData() {
+  const countyValue = document.getElementById('map-county-filter')?.value || '';
+  const typeValue = document.getElementById('map-type-filter')?.value || '';
+  return projectMapData.filter((group) => {
+    const countyMatch = !countyValue || group.county === countyValue;
+    const typeMatch = !typeValue || (group.workTypes || []).includes(typeValue);
+    return countyMatch && typeMatch;
+  });
+}
+
+function renderProjectMap(preserveView = false) {
+  const summaryEl = document.getElementById('map-summary');
+  if (!summaryEl || !projectMap || !projectMapLayer) return;
+
+  const filtered = getFilteredProjectMapData();
+  projectMapLayer.clearLayers();
+
+  if (!filtered.length) {
+    summaryEl.textContent = T[lang].map_no_results;
+    projectMap.setView(mapDefaultView.center, mapDefaultView.zoom);
+    return;
+  }
+
+  const bounds = [];
+  let visibleProjects = 0;
+  filtered.forEach((group) => {
+    visibleProjects += group.projectCount;
+    const marker = L.circleMarker([group.lat, group.lng], {
+      radius: group.projectCount > 1 ? 9 : 7,
+      color: '#0D1117',
+      weight: 1.5,
+      fillColor: '#00C9A7',
+      fillOpacity: 0.9
+    });
+    marker.bindPopup(buildProjectPopup(group), { maxWidth: 420 });
+    marker.addTo(projectMapLayer);
+    bounds.push([group.lat, group.lng]);
+  });
+
+  summaryEl.textContent = formatMapSummary(visibleProjects, filtered.length);
+  if (!preserveView && bounds.length) {
+    projectMap.fitBounds(bounds, { padding: [32, 32], maxZoom: 8 });
+  }
+}
+
+function refreshProjectMapUI() {
+  if (!projectMapLoaded) return;
+  populateProjectMapFilters();
+  renderProjectMap(true);
+}
+
+async function initProjectMap() {
+  const mapEl = document.getElementById('project-map-canvas');
+  const summaryEl = document.getElementById('map-summary');
+  const countySelect = document.getElementById('map-county-filter');
+  const typeSelect = document.getElementById('map-type-filter');
+  if (!mapEl || !summaryEl || !window.L) return;
+
+  summaryEl.textContent = T[lang].map_loading;
+  try {
+    if (Array.isArray(window.__PROJECT_MAP_DATA__) && window.__PROJECT_MAP_DATA__.length) {
+      projectMapData = window.__PROJECT_MAP_DATA__;
+    } else {
+      const response = await fetch('assets/projects-map-data.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error('Failed to load map data');
+      projectMapData = await response.json();
+    }
+
+    projectMap = L.map(mapEl, { scrollWheelZoom: false, zoomControl: true }).setView(mapDefaultView.center, mapDefaultView.zoom);
+    updateProjectMapBaseLayer();
+    projectMapLayer = L.layerGroup().addTo(projectMap);
+    projectMapLoaded = true;
+
+    populateProjectMapFilters();
+    countySelect.addEventListener('change', () => renderProjectMap());
+    typeSelect.addEventListener('change', () => renderProjectMap());
+    renderProjectMap();
+    setTimeout(() => projectMap.invalidateSize(), 120);
+  } catch (error) {
+    summaryEl.textContent = T[lang].map_error;
+    mapEl.classList.add('map-empty');
+    mapEl.textContent = T[lang].map_error;
+  }
 }
 
 /* ── SKILL BARS ── */
@@ -1333,6 +1606,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Lang (also inits Typed & Chart)
   initChart();
   applyLang(lang);
+  initProjectMap();
 
   // Skill bars observer
   const skillsSec = document.getElementById('skills-section');

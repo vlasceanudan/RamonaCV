@@ -1,0 +1,758 @@
+[
+  {
+    "id": "marker-01",
+    "uat": "FRUMU\u0218ENI",
+    "county": "ARAD",
+    "lat": 46.101856,
+    "lng": 21.460316,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului National de Cadastru \u0219i Carte Funciar\u0103 (PNCCF), LOT 1, UAT FRUMU\u0218ENI, JUD. ARAD",
+        "uat": "FRUMU\u0218ENI",
+        "county": "ARAD",
+        "period": "septembrie 2015-februarie 2018",
+        "surfaceHa": 4451,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI ARAD"
+      }
+    ]
+  },
+  {
+    "id": "marker-02",
+    "uat": "F\u00c2NT\u00c2NELE",
+    "county": "ARAD",
+    "lat": 46.124407,
+    "lng": 21.381111,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului National de Cadastru \u0219i Carte Funciar\u0103 (PNCCF), LOT 1, UAT F\u00c2NT\u00c2NELE, JUD. ARAD",
+        "uat": "F\u00c2NT\u00c2NELE",
+        "county": "ARAD",
+        "period": "februarie 2016 - august 2018",
+        "surfaceHa": 4046,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI ARAD"
+      }
+    ]
+  },
+  {
+    "id": "marker-03",
+    "uat": "H\u0102LMAGIU",
+    "county": "ARAD",
+    "lat": 46.267795,
+    "lng": 22.595753,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 3, UAT H\u0102LMAGIU, JUD. ARAD",
+        "uat": "H\u0102LMAGIU",
+        "county": "ARAD",
+        "period": "septembrie 2020-prezent",
+        "surfaceHa": 9707,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI ARAD"
+      }
+    ]
+  },
+  {
+    "id": "marker-04",
+    "uat": "N\u0102DLAC",
+    "county": "ARAD",
+    "lat": 46.166681,
+    "lng": 20.749992,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 9, 20, 27, 28 \u0219i 29 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT N\u0102DLAC, JUDE\u021aUL ARAD",
+        "uat": "N\u0102DLAC",
+        "county": "ARAD",
+        "period": "ianuarie 2019 - februarie 2020",
+        "surfaceHa": 2652,
+        "propertyCount": 1899,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA N\u0102DLAC, JUD. ARAD"
+      }
+    ]
+  },
+  {
+    "id": "marker-05",
+    "uat": "\u0218IMAND",
+    "county": "ARAD",
+    "lat": 46.428594,
+    "lng": 21.454748,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 3, UAT \u0218IMAND, JUD. ARAD",
+        "uat": "\u0218IMAND",
+        "county": "ARAD",
+        "period": "septembrie 2019-februarie 2021",
+        "surfaceHa": 5446,
+        "propertyCount": 3927,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI ARAD"
+      }
+    ]
+  },
+  {
+    "id": "marker-06",
+    "uat": "PITE\u0218TI",
+    "county": "ARGE\u0218",
+    "lat": 44.857288,
+    "lng": 24.872116,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de topografie inginereasc\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea ridic\u0103rii topografice privind modernizarea intersec\u021biilor semaforizate din MUN. PITE\u0218TI, JUD. ARGE\u0218",
+        "uat": "PITE\u0218TI",
+        "county": "ARGE\u0218",
+        "period": "iunie 2017 - septembrie 2017",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de topografie inginereasc\u0103",
+        "beneficiary": ""
+      }
+    ]
+  },
+  {
+    "id": "marker-07",
+    "uat": "GROPENI",
+    "county": "BR\u0102ILA",
+    "lat": 45.074489,
+    "lng": 27.883018,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizare a lucr\u0103rilor de \u00eenregistrare sistematica\u0306 a imobilelor i\u0302n sectoarele cadastrale nr. S4 si S11 i\u0302n vederea \u00eenscrierii imobilelor i\u0302n sistemul integrat de cadastru s\u0326i carte funciara\u0306, apar\u021bin\u00e2nd UAT GROPENI, JUD. BR\u0102ILA",
+        "uat": "GROPENI",
+        "county": "BR\u0102ILA",
+        "period": "iulie 2019 - august 2020",
+        "surfaceHa": 653,
+        "propertyCount": 1260,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA GROPENI, JUD. BR\u0102ILA"
+      }
+    ]
+  },
+  {
+    "id": "marker-08",
+    "uat": "SILI\u0218TEA",
+    "county": "BR\u0102ILA",
+    "lat": 45.311247,
+    "lng": 27.834704,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 7, UAT SILI\u0218TEA, JUD. BR\u0102ILA",
+        "uat": "SILI\u0218TEA",
+        "county": "BR\u0102ILA",
+        "period": "septembrie 2019-februarie 2021",
+        "surfaceHa": 11917,
+        "propertyCount": 8316,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI BR\u0102ILA"
+      }
+    ]
+  },
+  {
+    "id": "marker-09",
+    "uat": "ST\u0102NCU\u021aA",
+    "county": "BR\u0102ILA",
+    "lat": 44.896624,
+    "lng": 27.836799,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizare m\u0103sur\u0103tori pentru \u00eenregistrarea sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 33, 34, 35, 19 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT ST\u0102NCU\u021aA, JUDE\u021aUL BR\u0102ILA",
+        "uat": "ST\u0102NCU\u021aA",
+        "county": "BR\u0102ILA",
+        "period": "iunie 2019 - august 2020",
+        "surfaceHa": 3115,
+        "propertyCount": 3329,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA ST\u0102NCU\u021aA, JUDE\u021aUL BR\u0102ILA"
+      }
+    ]
+  },
+  {
+    "id": "marker-10",
+    "uat": "ULMU",
+    "county": "BR\u0102ILA",
+    "lat": 44.950674,
+    "lng": 27.329357,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizare m\u0103sur\u0103tori pentru \u00eenregistrarea sistematic\u0103 a imobilelor \u00een sectorul cadastral nr. 3 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103 \u2013 pentru terenuri din categoria de dificultate I, apar\u021bin\u00e2nd COMUNEI ULMU, JUD. BR\u0102ILA",
+        "uat": "ULMU",
+        "county": "BR\u0102ILA",
+        "period": "iunie 2019 - decembrie 2020",
+        "surfaceHa": 1639,
+        "propertyCount": 1929,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA ULMU, JUD. BR\u0102ILA"
+      }
+    ]
+  },
+  {
+    "id": "marker-11",
+    "uat": "VIZIRU",
+    "county": "BR\u0102ILA",
+    "lat": 45.001869,
+    "lng": 27.712985,
+    "precision": "uat",
+    "projectCount": 3,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 12, 13, 14, 15, 18, 20, 22 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT VIZIRU, JUD. BR\u0102ILA.",
+        "uat": "VIZIRU",
+        "county": "BR\u0102ILA",
+        "period": "noiembrie 2018 - decembrie 2019",
+        "surfaceHa": 3053,
+        "propertyCount": 2541,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA VIZIRU, JUD. BR\u0102ILA"
+      },
+      {
+        "title": "Realizare a lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. S4, S7, S8, S19, S21 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT VIZIRU, JUD. BR\u0102ILA",
+        "uat": "VIZIRU",
+        "county": "BR\u0102ILA",
+        "period": "iulie 2019 - martie 2021",
+        "surfaceHa": 3193,
+        "propertyCount": 2791,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA VIZIRU, JUD. BR\u0102ILA"
+      },
+      {
+        "title": "Realizare a lucr\u0103rilor de \u00eenregistrare sistematica\u0306 a imobilelor i\u0302n sectoarele cadastrale nr. S25, S26 i\u0302n vederea \u00eenscrierii imobilelor i\u0302n sistemul integrat de cadastru s\u0326i carte funciara\u0306, apar\u021bin\u00e2nd intravilanului UAT VIZIRU, JUD. BR\u0102ILA",
+        "uat": "VIZIRU",
+        "county": "BR\u0102ILA",
+        "period": "iunie 2020 - prezent",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA COMUNEI VIZIRU"
+      }
+    ]
+  },
+  {
+    "id": "marker-12",
+    "uat": "V\u0102DENI",
+    "county": "BR\u0102ILA",
+    "lat": 45.375782,
+    "lng": 27.941604,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 7, UAT V\u0102DENI, JUD. BR\u0102ILA",
+        "uat": "V\u0102DENI",
+        "county": "BR\u0102ILA",
+        "period": "septembrie 2020-prezent",
+        "surfaceHa": 15582,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI BR\u0102ILA"
+      }
+    ]
+  },
+  {
+    "id": "marker-13",
+    "uat": "DALNIC",
+    "county": "COVASNA",
+    "lat": 45.922417,
+    "lng": 25.98741,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 13, UAT DALNIC, JUD. COVASNA",
+        "uat": "DALNIC",
+        "county": "COVASNA",
+        "period": "decembrie 2020 - prezent",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI COVASNA"
+      }
+    ]
+  },
+  {
+    "id": "marker-14",
+    "uat": "OJDULA",
+    "county": "COVASNA",
+    "lat": 45.987352,
+    "lng": 26.260502,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 13, UAT OJDULA, JUD. COVASNA",
+        "uat": "OJDULA",
+        "county": "COVASNA",
+        "period": "septembrie 2020 - prezent",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI COVASNA"
+      }
+    ]
+  },
+  {
+    "id": "marker-15",
+    "uat": "RECI",
+    "county": "COVASNA",
+    "lat": 45.804917,
+    "lng": 25.956883,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 13, UAT RECI, JUD. COVASNA",
+        "uat": "RECI",
+        "county": "COVASNA",
+        "period": "iulie 2019 - prezent",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI COVASNA"
+      }
+    ]
+  },
+  {
+    "id": "marker-16",
+    "uat": "T\u00c2RGOVI\u0218TE",
+    "county": "D\u00c2MBOVI\u021aA",
+    "lat": 44.926771,
+    "lng": 25.462816,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de topografie inginereasc\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea ridic\u0103rii topografice privind reabilitarea centurii MUN. T\u00c2RGOVI\u0218TE, JUD. D\u00c2MBOVI\u021aA",
+        "uat": "T\u00c2RGOVI\u0218TE",
+        "county": "D\u00c2MBOVI\u021aA",
+        "period": "aprilie 2016 - august 2016",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de topografie inginereasc\u0103",
+        "beneficiary": ""
+      }
+    ]
+  },
+  {
+    "id": "marker-17",
+    "uat": "F\u0102C\u0102ENI",
+    "county": "IALOMI\u021aA",
+    "lat": 44.560138,
+    "lng": 27.894852,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 71, UAT F\u0102C\u0102ENI, JUD. IALOMI\u021aA",
+        "uat": "F\u0102C\u0102ENI",
+        "county": "IALOMI\u021aA",
+        "period": "februarie 2020 - prezent",
+        "surfaceHa": 20427,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "ANCPI"
+      }
+    ]
+  },
+  {
+    "id": "marker-18",
+    "uat": "BOLDE\u0218TI-GR\u0102DI\u0218TEA",
+    "county": "PRAHOVA",
+    "lat": 44.882018,
+    "lng": 26.547223,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 3, 7, 8, 9, 14, 20, 21, 28, 30, 31 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT BOLDE\u0218TI-GR\u0102DI\u0218TEA, JUDE\u021aUL PRAHOVA",
+        "uat": "BOLDE\u0218TI-GR\u0102DI\u0218TEA",
+        "county": "PRAHOVA",
+        "period": "noiembrie 2018 - noiembrie 2019",
+        "surfaceHa": 1024,
+        "propertyCount": 1862,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA BOLDE\u0218TI-GR\u0102DI\u0218TEA"
+      }
+    ]
+  },
+  {
+    "id": "marker-19",
+    "uat": "BUCOV",
+    "county": "PRAHOVA",
+    "lat": 44.974235,
+    "lng": 26.081536,
+    "precision": "uat",
+    "projectCount": 3,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii topo-cadastrale pentru realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 pe sectoarele cadastrale 32, 34, 43, 52 \u00een vederea \u00eenscrierii \u00een cartea funciar\u0103 a imobilelor din extravilanul/intravilanul UAT COMUNEI BUCOV, JUD. PRAHOVA.",
+        "uat": "BUCOV",
+        "county": "PRAHOVA",
+        "period": "noiembrie 2018-octombrie 2019",
+        "surfaceHa": 621,
+        "propertyCount": 1131,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA BUCOV, JUD. PRAHOVA"
+      },
+      {
+        "title": "Servicii topo-cadastrale pentru realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 pe sectorul cadastral 61 \u00een vederea \u00eenscrierii \u00een cartea funciar\u0103 a imobilelor din intravilanul UAT COMUNEI BUCOV, JUD. PRAHOVA.",
+        "uat": "BUCOV",
+        "county": "PRAHOVA",
+        "period": "octombrie 2019-noiembrie 2019",
+        "surfaceHa": 288,
+        "propertyCount": 75,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA BUCOV, JUD. PRAHOVA"
+      },
+      {
+        "title": "\u00cenregistrarea sistematic\u0103 pe sectoare cadastrale nr. 19, 28, 40, 41, 46 \u0219i 64 a imobilelor din extravilanul/intravilanul UAT BUCOV, JUD. PRAHOVA \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u2013 (P.N.C.C.F.)",
+        "uat": "BUCOV",
+        "county": "PRAHOVA",
+        "period": "februarie 2021 - prezent",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA COMUNEI BUCOV"
+      }
+    ]
+  },
+  {
+    "id": "marker-20",
+    "uat": "PLOIE\u0218TI",
+    "county": "PRAHOVA",
+    "lat": 44.941747,
+    "lng": 26.02365,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de topografie inginereasc\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea ridic\u0103rii topografice privind modernizarea intersec\u021biilor semaforizate din MUN. PLOIE\u0218TI, JUD. PRAHOVA",
+        "uat": "PLOIE\u0218TI",
+        "county": "PRAHOVA",
+        "period": "iunie 2017 - septembrie 2017",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de topografie inginereasc\u0103",
+        "beneficiary": ""
+      }
+    ]
+  },
+  {
+    "id": "marker-21",
+    "uat": "ALEXANDRIA",
+    "county": "TELEORMAN",
+    "lat": 43.970224,
+    "lng": 25.328846,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 27 \u0219i 28 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT MUN. ALEXANDRIA, JUD. TELEORMAN",
+        "uat": "ALEXANDRIA",
+        "county": "TELEORMAN",
+        "period": "noiembrie 2018-octombrie 2019",
+        "surfaceHa": 1845,
+        "propertyCount": 1635,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA MUN. ALEXANDRIA, JUD. TELEORMAN"
+      }
+    ]
+  },
+  {
+    "id": "marker-22",
+    "uat": "BLEJE\u0218TI",
+    "county": "TELEORMAN",
+    "lat": 44.292468,
+    "lng": 25.47568,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 33, UAT BLEJE\u0218TI, JUD. TELEORMAN",
+        "uat": "BLEJE\u0218TI",
+        "county": "TELEORMAN",
+        "period": "decembrie 2020-prezent",
+        "surfaceHa": 5860,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI TELEORMAN"
+      }
+    ]
+  },
+  {
+    "id": "marker-23",
+    "uat": "BOTOROAGA",
+    "county": "TELEORMAN",
+    "lat": 44.148594,
+    "lng": 25.544987,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 33, UAT BOTOROAGA, JUD. TELEORMAN",
+        "uat": "BOTOROAGA",
+        "county": "TELEORMAN",
+        "period": "martie 2020-prezent",
+        "surfaceHa": 8513,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI TELEORMAN"
+      }
+    ]
+  },
+  {
+    "id": "marker-24",
+    "uat": "DR\u0102G\u0102NE\u0218TI-VLA\u0218CA",
+    "county": "TELEORMAN",
+    "lat": 44.101391,
+    "lng": 25.598319,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 33, UAT DR\u0102G\u0102NE\u0218TI-VLA\u0218CA, JUD. TELEORMAN",
+        "uat": "DR\u0102G\u0102NE\u0218TI-VLA\u0218CA",
+        "county": "TELEORMAN",
+        "period": "septembrie 2019-prezent",
+        "surfaceHa": 9119,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI TELEORMAN"
+      }
+    ]
+  },
+  {
+    "id": "marker-25",
+    "uat": "M\u0102LD\u0102ENI",
+    "county": "TELEORMAN",
+    "lat": 44.126576,
+    "lng": 24.920643,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 33, UAT M\u0102LD\u0102ENI, JUD. TELEORMAN",
+        "uat": "M\u0102LD\u0102ENI",
+        "county": "TELEORMAN",
+        "period": "decembrie 2020-prezent",
+        "surfaceHa": 5411,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI TELEORMAN"
+      }
+    ]
+  },
+  {
+    "id": "marker-26",
+    "uat": "PERETU",
+    "county": "TELEORMAN",
+    "lat": 44.043261,
+    "lng": 25.090671,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 33, UAT PERETU, JUD. TELEORMAN",
+        "uat": "PERETU",
+        "county": "TELEORMAN",
+        "period": "ianuarie 2021 - prezent",
+        "surfaceHa": 7064,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI TELEORMAN"
+      }
+    ]
+  },
+  {
+    "id": "marker-27",
+    "uat": "TROIANUL",
+    "county": "TELEORMAN",
+    "lat": 44.001432,
+    "lng": 25.021057,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului Na\u021bional Regional (POR) - Proiectul Major \u201eCresterea gradului de acoperire si incluziune a sistemului de \u00eenregistrare a propriet\u0103\u021bilor \u00een zonele rurale din Rom\u00e2nia\u201d , LOT 33, UAT TROIANUL, JUD. TELEORMAN",
+        "uat": "TROIANUL",
+        "county": "TELEORMAN",
+        "period": "ianuarie 2021 - prezent",
+        "surfaceHa": 5623,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI TELEORMAN"
+      }
+    ]
+  },
+  {
+    "id": "marker-28",
+    "uat": "ZIMNICEA",
+    "county": "TELEORMAN",
+    "lat": 43.654234,
+    "lng": 25.365546,
+    "precision": "uat",
+    "projectCount": 3,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 8, 6, 7, 1 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT ZIMNICEA, JUD. TELEORMAN",
+        "uat": "ZIMNICEA",
+        "county": "TELEORMAN",
+        "period": "noiembrie 2018 - octombrie 2019",
+        "surfaceHa": 2139,
+        "propertyCount": 2711,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA ZIMNICEA, JUD. TELEORMAN"
+      },
+      {
+        "title": "Realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 2, 3, 5 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT ZIMNICEA, JUD. TELEORMAN",
+        "uat": "ZIMNICEA",
+        "county": "TELEORMAN",
+        "period": "iunie 2019 - decembrie 2020",
+        "surfaceHa": 1560,
+        "propertyCount": 1934,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA ZIMNICEA, JUD. TELEORMAN"
+      },
+      {
+        "title": "Realizarea lucr\u0103rilor de \u00eenregistrare sistematic\u0103 a imobilelor \u00een sectoarele cadastrale nr. 4, 10, 11 \u00een vederea \u00eenscrierii imobilelor \u00een sistemul integrat de cadastru \u0219i carte funciar\u0103, apar\u021bin\u00e2nd UAT ZIMNICEA, JUD. TELEORMAN",
+        "uat": "ZIMNICEA",
+        "county": "TELEORMAN",
+        "period": "februarie 2020 - prezent",
+        "surfaceHa": null,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "PRIM\u0102RIA COMUNEI ZIMNICEA"
+      }
+    ]
+  },
+  {
+    "id": "marker-29",
+    "uat": "PERIENI",
+    "county": "VASLUI",
+    "lat": 46.258027,
+    "lng": 27.626987,
+    "precision": "uat",
+    "projectCount": 1,
+    "workTypes": [
+      "Lucrare de \u00eenregistrare sistematic\u0103"
+    ],
+    "projects": [
+      {
+        "title": "Servicii de \u00eenregistrare sistematic\u0103 a imobilelor \u00een Sistemul Integrat de Cadastru \u0219i Carte Funciar\u0103 \u00een cadrul Programului National de Cadastru \u0219i Carte Funciar\u0103 (PNCCF), LOT 6, UAT PERIENI, JUD. VASLUI",
+        "uat": "PERIENI",
+        "county": "VASLUI",
+        "period": "februarie 2018 - octombrie 2018",
+        "surfaceHa": 6405,
+        "propertyCount": null,
+        "workType": "Lucrare de \u00eenregistrare sistematic\u0103",
+        "beneficiary": "Asocierea ANCPI - OCPI VASLUI"
+      }
+    ]
+  }
+]
