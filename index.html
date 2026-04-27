@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandra-Ramona Sima | Project & Operations Manager</title>
+  <meta name="description" content="Alexandra-Ramona Sima — Project & Operations Manager with 9+ years in cadastre and infrastructure project management in Romania." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alexandra-Ramona Sima | Project & Operations Manager" />
+  <meta property="og:description" content="9+ years managing complex cadastre and infrastructure projects. 50+ projects, 70+ specialists led." />
+  <meta property="og:image" content="assets/avatar.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<style>
+/* ── TOKENS ── */
+:root {
+  --bg:      #0D1117;
+  --bg2:     #161B22;
+  --bg3:     #21262D;
+  --ac:      #00C9A7;
+  --ac-r:    0,201,167;
+  --ac-s:    rgba(0,201,167,.10);
+  --tx:      #E6EDF3;
+  --tx2:     #8B949E;
+  --bd:      #30363D;
+  --danger:  #F78166;
+  --amber:   #E3B341;
+  --ff-d:    'Playfair Display', serif;
+  --ff:      'Inter', sans-serif;
+  --tr:      .3s ease;
+}
+[data-theme="light"] {
+  --bg:  #FFFFFF; --bg2: #F6F8FA; --bg3: #EAEEF2;
+  --ac:  #009E83; --ac-r: 0,158,131; --ac-s: rgba(0,158,131,.10);
+  --tx:  #1F2328; --tx2: #57606A; --bd:  #D0D7DE;
+}
+
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--ff);background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
+img{max-width:100%;display:block}
+a{color:var(--ac);text-decoration:none}
+a:hover{text-decoration:underline}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+
+/* ── LAYOUT ── */
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.section{padding:5rem 0}
+.section-alt{background:var(--bg2)}
+.section-header{text-align:center;margin-bottom:3rem}
+.section-header h2{font-size:2rem;font-weight:700;display:inline-block;position:relative;margin-bottom:.75rem}
+.section-header h2::after{content:'';position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:48px;height:3px;background:var(--ac);border-radius:2px}
+.section-header p{color:var(--tx2);font-size:1.05rem;margin-top:1rem}
+
+/* ── UTILITIES ── */
+.tag{display:inline-flex;align-items:center;padding:.2rem .6rem;border-radius:9999px;font-size:.72rem;font-weight:600;background:var(--ac-s);color:var(--ac);border:1px solid rgba(var(--ac-r),.3)}
+.card{background:var(--bg2);border:1px solid var(--bd);border-radius:12px;padding:1.5rem;transition:transform var(--tr),box-shadow var(--tr)}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(var(--ac-r),.12)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.25rem;border-radius:8px;font-weight:600;font-size:.875rem;transition:all var(--tr);text-decoration:none;cursor:pointer;font-family:var(--ff)}
+.btn-primary{background:var(--ac);color:#0D1117}
+.btn-primary:hover{opacity:.88;transform:translateY(-1px);text-decoration:none}
+.btn-outline{border:1.5px solid var(--ac);color:var(--ac)}
+.btn-outline:hover{background:var(--ac-s);transform:translateY(-1px);text-decoration:none}
+.date-badge{display:inline-flex;align-items:center;padding:.18rem .6rem;border-radius:9999px;font-size:.72rem;font-weight:500;background:var(--bg3);color:var(--tx2);border:1px solid var(--bd)}
+.date-badge.active{background:rgba(var(--ac-r),.1);color:var(--ac);border-color:rgba(var(--ac-r),.35)}
+.concurrent-badge{display:inline-flex;align-items:center;padding:.18rem .6rem;border-radius:9999px;font-size:.72rem;font-weight:600;background:rgba(227,179,65,.12);color:var(--amber);border:1px solid rgba(227,179,65,.3)}
+
+/* ── NAVBAR ── */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(13,17,23,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--bd);transition:box-shadow .3s,background .3s}
+[data-theme="light"] #navbar{background:rgba(255,255,255,.88)}
+#navbar.scrolled{box-shadow:0 4px 24px rgba(var(--ac-r),.08)}
+.nav-container{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.nav-logo{font-family:var(--ff-d);font-size:1.5rem;font-weight:700;color:var(--ac);letter-spacing:.05em}
+.nav-links{display:flex;align-items:center;gap:.15rem}
+.nav-links a{color:var(--tx2);font-size:.875rem;font-weight:500;padding:.375rem .7rem;border-radius:6px;transition:all var(--tr)}
+.nav-links a:hover,.nav-links a.active{color:var(--tx);background:var(--bg3);text-decoration:none}
+.nav-actions{display:flex;align-items:center;gap:.5rem}
+.icon-btn{display:flex;align-items:center;justify-content:center;min-width:36px;height:36px;padding:0 .5rem;border-radius:8px;color:var(--tx2);border:1px solid var(--bd);transition:all var(--tr);font-size:.8rem;font-weight:700;letter-spacing:.03em}
+.icon-btn:hover{color:var(--tx);border-color:var(--tx2)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}
+.hamburger span{display:block;width:22px;height:2px;background:var(--tx);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;padding:6rem 0 4rem;position:relative;overflow:hidden}
+#hero::before{content:'';position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(var(--ac-r),.06) 0%,transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.375rem .875rem;border-radius:9999px;background:rgba(var(--ac-r),.1);border:1px solid rgba(var(--ac-r),.3);color:var(--ac);font-size:.8rem;font-weight:600;margin-bottom:1.5rem;width:fit-content}
+.pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--ac);animation:pulse 2s infinite}
+.hero-name{font-family:var(--ff-d);font-size:clamp(2.4rem,5vw,3.75rem);font-weight:700;line-height:1.1;margin-bottom:1rem;background:linear-gradient(135deg,var(--tx) 55%,var(--ac));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-typed-wrap{font-size:clamp(1rem,2vw,1.2rem);color:var(--tx2);height:2rem;margin-bottom:1.5rem}
+.typed-cursor{color:var(--ac)}
+.hero-desc{color:var(--tx2);font-size:.95rem;line-height:1.75;margin-bottom:2rem;max-width:480px}
+.hero-ctas{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.hero-contacts{display:flex;gap:1.25rem;flex-wrap:wrap}
+.hc-item{display:flex;align-items:center;gap:.375rem;color:var(--tx2);font-size:.8rem;transition:color var(--tr)}
+.hc-item:hover{color:var(--ac);text-decoration:none}
+.hc-item svg{flex-shrink:0}
+.hero-visual{display:flex;justify-content:center;align-items:center;position:relative}
+.avatar-wrap{position:relative;width:280px;height:280px}
+.av-ring{position:absolute;inset:-12px;border-radius:50%;border:2px solid var(--ac);opacity:.35;animation:spin 20s linear infinite}
+.av-ring2{position:absolute;inset:-26px;border-radius:50%;border:1px dashed rgba(var(--ac-r),.2);animation:spin 32s linear infinite reverse}
+.avatar-img{width:280px;height:280px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid var(--ac);position:relative;z-index:1}
+.avatar-init{width:280px;height:280px;border-radius:50%;background:var(--bg3);border:3px solid var(--ac);display:none;align-items:center;justify-content:center;font-family:var(--ff-d);font-size:4rem;font-weight:700;color:var(--ac);position:relative;z-index:1}
+.stat-card{position:absolute;background:var(--bg2);border:1px solid var(--bd);border-radius:12px;padding:.7rem 1rem;text-align:center;z-index:2;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.stat-card.top{top:-10px;right:-28px;animation:float 3s ease-in-out infinite}
+.stat-card.bot{bottom:-10px;left:-28px;animation:float 3s ease-in-out infinite 1.5s}
+.stat-val{font-size:1.5rem;font-weight:800;color:var(--ac);line-height:1}
+.stat-lbl{font-size:.68rem;color:var(--tx2);margin-top:.2rem;white-space:nowrap}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start}
+.about-text p{color:var(--tx2);margin-bottom:1.25rem;line-height:1.8}
+.fact-item{display:flex;align-items:flex-start;gap:.75rem;padding:.75rem;border-radius:10px;background:var(--bg3);margin-bottom:.75rem}
+.fact-icon{width:32px;height:32px;border-radius:8px;background:var(--ac-s);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ac);font-size:1rem}
+.fact-lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tx2);margin-bottom:.1rem}
+.fact-val{font-size:.875rem;font-weight:500;color:var(--tx)}
+.comp-list{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+
+/* ── TIMELINE ── */
+.timeline{position:relative;padding-bottom:2rem}
+.timeline::before{content:'';position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--ac),transparent)}
+.tl-item{position:relative;margin-bottom:2.5rem}
+.tl-dot{position:absolute;left:50%;top:1.5rem;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--ac);border:2px solid var(--bg);z-index:1;transition:transform .3s,box-shadow .3s}
+.tl-item:hover .tl-dot{transform:translateX(-50%) scale(1.5);box-shadow:0 0 0 4px rgba(var(--ac-r),.2)}
+.tl-card{width:45%}
+.tl-item:nth-child(odd) .tl-card{margin-left:55%}
+.tl-item:nth-child(even) .tl-card{margin-left:0}
+.tl-company{font-size:.75rem;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.tl-role{font-size:1.05rem;font-weight:700;color:var(--tx);margin-bottom:.5rem}
+.tl-meta{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin-bottom:.75rem}
+.tl-bullets{padding:0;margin-bottom:.875rem}
+.tl-bullets li{position:relative;padding-left:1rem;color:var(--tx2);font-size:.875rem;line-height:1.65;margin-bottom:.35rem}
+.tl-bullets li::before{content:'▸';position:absolute;left:0;color:var(--ac);font-size:.7rem;top:.22rem}
+.tl-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+
+/* ── EDUCATION ── */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:2rem}
+.edu-card{padding-left:1rem;border-left:3px solid var(--ac)}
+.edu-type{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ac);font-weight:700;margin-bottom:.2rem}
+.edu-degree{font-size:.95rem;font-weight:700;color:var(--tx);margin-bottom:.2rem;line-height:1.35}
+.edu-inst{font-size:.8rem;color:var(--tx2);margin-bottom:.5rem}
+.certs-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.cert-card{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem}
+.cert-icon{width:40px;height:40px;border-radius:10px;background:var(--ac-s);display:flex;align-items:center;justify-content:center;color:var(--ac);flex-shrink:0;font-size:1.25rem}
+.cert-name{font-size:.9rem;font-weight:600;color:var(--tx);margin-bottom:.15rem}
+.cert-meta{font-size:.75rem;color:var(--tx2)}
+
+/* ── SKILLS ── */
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.skills-sub{text-align:center;font-weight:600;font-size:.95rem;color:var(--tx);margin-bottom:1.25rem}
+.chart-wrap{position:relative;height:310px}
+.bar-item{margin-bottom:1.1rem}
+.bar-hdr{display:flex;justify-content:space-between;margin-bottom:.35rem}
+.bar-lbl{font-size:.875rem;font-weight:500;color:var(--tx)}
+.bar-pct{font-size:.75rem;font-weight:700;color:var(--ac)}
+.bar-track{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--ac),rgba(var(--ac-r),.6));border-radius:3px;width:0;transition:width 1.2s cubic-bezier(.25,.46,.45,.94)}
+.tools-wrap{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
+.tool-badge{padding:.35rem .85rem;border-radius:8px;font-size:.8rem;font-weight:500;background:var(--bg3);color:var(--tx2);border:1px solid var(--bd);transition:all var(--tr)}
+.tool-badge:hover{background:var(--ac-s);color:var(--ac);border-color:rgba(var(--ac-r),.3)}
+
+/* ── ACHIEVEMENTS ── */
+.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:1.25rem}
+.metric-card{text-align:center;padding:2rem 1.5rem;position:relative;overflow:hidden}
+.metric-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--ac);transform:scaleX(0);transition:transform .4s}
+.metric-card:hover::after{transform:scaleX(1)}
+.metric-card:hover{box-shadow:0 8px 32px rgba(var(--ac-r),.18);transform:translateY(-4px)}
+.metric-ico{font-size:2rem;margin-bottom:.75rem}
+.metric-val{font-size:2.5rem;font-weight:800;color:var(--ac);line-height:1;margin-bottom:.5rem}
+.metric-lbl{font-size:.8rem;color:var(--tx2);font-weight:500;line-height:1.45}
+.metric-wide{grid-column:1/-1;display:flex;align-items:center;gap:2rem;padding:1.75rem 2rem;text-align:left}
+.metric-wide .metric-ico{font-size:2.5rem;flex-shrink:0}
+.metric-wide .metric-val{font-size:3rem;flex-shrink:0}
+.metric-wide .metric-lbl{font-size:.95rem}
+.metric-desc{font-size:.82rem;color:var(--tx2);margin-top:.35rem;line-height:1.55}
+
+/* ── PORTFOLIO ── */
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.proj-card{display:flex;flex-direction:column}
+.proj-tag{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ac);font-weight:700;margin-bottom:.6rem}
+.proj-title{font-size:1rem;font-weight:700;color:var(--tx);margin-bottom:.65rem;line-height:1.4}
+.proj-desc{font-size:.855rem;color:var(--tx2);line-height:1.7;margin-bottom:.875rem;flex:1}
+.proj-outcome{font-size:.82rem;font-weight:600;color:var(--ac);padding:.45rem .75rem;background:var(--ac-s);border-radius:6px;margin-bottom:.875rem;display:flex;align-items:center;gap:.35rem}
+.proj-skills{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:1.1rem}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:3rem}
+.contact-form{display:flex;flex-direction:column;gap:.875rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.875rem}
+.form-group{display:flex;flex-direction:column;gap:.35rem}
+.form-group label{font-size:.78rem;font-weight:500;color:var(--tx2)}
+.form-group input,.form-group select,.form-group textarea{background:var(--bg3);border:1px solid var(--bd);border-radius:8px;padding:.6rem .875rem;color:var(--tx);font-family:var(--ff);font-size:.9rem;outline:none;transition:border-color .2s,box-shadow .2s;width:100%}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--tx2);opacity:.6}
+.form-group select option{background:var(--bg2);color:var(--tx)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(var(--ac-r),.12)}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-msg{display:none;padding:.875rem;border-radius:8px;background:rgba(var(--ac-r),.1);border:1px solid rgba(var(--ac-r),.3);color:var(--ac);font-size:.875rem;text-align:center}
+.contact-details{display:flex;flex-direction:column;gap:.875rem}
+.cd-item{display:flex;align-items:center;gap:.875rem;padding:.875rem;border-radius:10px;background:var(--bg3);transition:background var(--tr)}
+.cd-item:hover{background:var(--bg2)}
+.cd-icon{width:40px;height:40px;border-radius:10px;background:var(--ac-s);display:flex;align-items:center;justify-content:center;color:var(--ac);flex-shrink:0;font-size:1.1rem}
+.cd-lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tx2);margin-bottom:.1rem}
+.cd-val{font-size:.875rem;font-weight:500;color:var(--tx);word-break:break-all}
+.cd-content{flex:1;min-width:0}
+.copy-btn{padding:.28rem .6rem;border-radius:6px;font-size:.7rem;font-weight:500;color:var(--tx2);border:1px solid var(--bd);background:transparent;cursor:pointer;transition:all var(--tr);white-space:nowrap;flex-shrink:0;font-family:var(--ff)}
+.copy-btn:hover{color:var(--ac);border-color:rgba(var(--ac-r),.4)}
+
+/* ── FOOTER ── */
+footer{background:var(--bg2);border-top:1px solid var(--bd);padding:2rem 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-left{font-size:.8rem;color:var(--tx2)}
+.footer-left strong{color:var(--tx)}
+.footer-right{display:flex;align-items:center;gap:.5rem}
+
+/* ── MODAL ── */
+#modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;z-index:2000;opacity:0;pointer-events:none;transition:opacity .3s;padding:1.5rem}
+#modal-overlay.active{opacity:1;pointer-events:all}
+#modal-box{background:var(--bg2);border:1px solid var(--bd);border-radius:16px;padding:2rem;max-width:600px;width:100%;max-height:80vh;overflow-y:auto;position:relative;transform:scale(.95);transition:transform .3s}
+#modal-overlay.active #modal-box{transform:scale(1)}
+#modal-close{position:absolute;top:1rem;right:1rem;width:32px;height:32px;border-radius:8px;background:var(--bg3);color:var(--tx2);display:flex;align-items:center;justify-content:center;font-size:1.3rem;cursor:pointer;transition:all var(--tr)}
+#modal-close:hover{background:rgba(247,129,102,.15);color:var(--danger)}
+.modal-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ac);font-weight:700;margin-bottom:.75rem}
+#modal-body h3{font-size:1.2rem;font-weight:700;color:var(--tx);margin-bottom:.75rem}
+#modal-body p{color:var(--tx2);font-size:.9rem;line-height:1.72;margin-bottom:.75rem}
+#modal-body ul{margin-bottom:1rem}
+#modal-body ul li{position:relative;padding-left:1.2rem;color:var(--tx2);font-size:.875rem;line-height:1.65;margin-bottom:.4rem}
+#modal-body ul li::before{content:'▸';position:absolute;left:0;color:var(--ac)}
+.modal-outcome{padding:.75rem 1rem;background:var(--ac-s);border-radius:8px;color:var(--ac);font-size:.875rem;font-weight:600;margin-top:1rem}
+
+/* ── ANIMATIONS ── */
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-desc{max-width:100%}
+  .hero-ctas,.hero-contacts{justify-content:center}
+  .hero-badge{margin:0 auto 1.5rem}
+  .hero-visual{margin-top:2.5rem}
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+  .chart-wrap{height:260px}
+}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--bd);padding:1rem;flex-direction:column;gap:.25rem;z-index:999}
+  .nav-links.open{display:flex}
+  .nav-links.open a{padding:.7rem 1rem;border-radius:8px;display:block}
+  .hamburger{display:flex}
+  .timeline::before{left:20px}
+  .tl-dot{left:20px}
+  .tl-item:nth-child(odd) .tl-card,.tl-item:nth-child(even) .tl-card{margin-left:44px;width:calc(100% - 44px)}
+  .edu-grid,.certs-grid{grid-template-columns:1fr}
+  .metrics-grid{grid-template-columns:repeat(2,1fr)}
+  .metric-wide{flex-direction:column;text-align:center;gap:1rem}
+  .portfolio-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;gap:1rem;text-align:center}
+}
+@media(max-width:480px){
+  .metrics-grid{grid-template-columns:1fr}
+  .hero-ctas{flex-direction:column;align-items:center}
+  .avatar-wrap,.avatar-img,.avatar-init{width:220px;height:220px}
+  .stat-card.top{right:-10px}
+  .stat-card.bot{left:-10px}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">ARS</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"        data-i18n="nav_about">About</a></li>
+      <li><a href="#experience"   data-i18n="nav_exp">Experience</a></li>
+      <li><a href="#education"    data-i18n="nav_edu">Education</a></li>
+      <li><a href="#skills"       data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#achievements" data-i18n="nav_ach">Achievements</a></li>
+      <li><a href="#contact"      data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="CV.pdf" download class="btn btn-outline" style="font-size:.8rem;padding:.45rem 1rem" data-i18n="nav_dl">Download CV</a>
+      <button class="icon-btn" id="lang-btn" title="Schimbă limba / Change language">EN</button>
+      <button class="icon-btn" id="theme-btn" title="Toggle theme">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div data-aos="fade-right">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero_badge">Available for new projects</span>
+        </div>
+        <h1 class="hero-name">Alexandra-Ramona<br>Sima</h1>
+        <div class="hero-typed-wrap"><span id="typed-el"></span></div>
+        <p class="hero-desc" data-i18n="hero_desc">
+          Professional with 9+ years managing complex cadastre and infrastructure projects across Romania, leading multidisciplinary teams and consistently delivering results on time and within legislative standards.
+        </p>
+        <div class="hero-ctas">
+          <a href="#portfolio" class="btn btn-primary" data-i18n="hero_cta1">View My Work</a>
+          <a href="#contact"   class="btn btn-outline" data-i18n="hero_cta2">Contact Me</a>
+        </div>
+        <div class="hero-contacts">
+          <a href="mailto:sima.alexandra.ramona@gmail.com" class="hc-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            sima.alexandra.ramona@gmail.com
+          </a>
+          <a href="tel:+40720254166" class="hc-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +40 720 254 166
+          </a>
+          <a href="#" class="hc-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            București, Romania
+          </a>
+          <a href="#" class="hc-item" id="linkedin-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <!-- Right / Avatar -->
+      <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+        <div class="avatar-wrap">
+          <div class="av-ring"></div>
+          <div class="av-ring2"></div>
+          <img src="assets/avatar.jpg" alt="Alexandra-Ramona Sima" class="avatar-img"
+               onerror="this.style.display='none';document.querySelector('.avatar-init').style.display='flex'"/>
+          <div class="avatar-init">ARS</div>
+          <div class="stat-card top">
+            <div class="stat-val">9+</div>
+            <div class="stat-lbl" data-i18n="stat1">Years Experience</div>
+          </div>
+          <div class="stat-card bot">
+            <div class="stat-val">50+</div>
+            <div class="stat-lbl" data-i18n="stat2">Projects Managed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="about_title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-aos="fade-right">
+        <p data-i18n="about_p1">
+          I bring a rare combination of technical expertise in geodesy and cadastre with strong operational management capabilities, backed by two bachelor's degrees and a Master's in Spatial Planning &amp; GIS from the Technical University of Civil Engineering Bucharest.
+        </p>
+        <p data-i18n="about_p2">
+          Over 9 years I've scaled an organisation from 3 to 70+ specialists, managed portfolios of 50+ concurrent projects funded by European and national ANCPI programmes, and driven meaningful process improvements — including a 30% reduction in execution time and 70%+ automation of document processing workflows.
+        </p>
+        <p data-i18n="about_p3">
+          As a certified International Business Coach and accredited Personal Development Consultant, I lead with a people-first approach, building high-performance teams in technically demanding and logistically complex field environments.
+        </p>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="150">
+        <div class="fact-item">
+          <div class="fact-icon">📍</div>
+          <div>
+            <div class="fact-lbl" data-i18n="fact_loc_lbl">Location</div>
+            <div class="fact-val" data-i18n="fact_loc">București, Romania</div>
+          </div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-icon">✉️</div>
+          <div>
+            <div class="fact-lbl">Email</div>
+            <div class="fact-val">sima.alexandra.ramona@gmail.com</div>
+          </div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-icon">📞</div>
+          <div>
+            <div class="fact-lbl" data-i18n="fact_ph_lbl">Phone</div>
+            <div class="fact-val">+40 720 254 166</div>
+          </div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-icon">🌐</div>
+          <div>
+            <div class="fact-lbl" data-i18n="fact_lang_lbl">Languages</div>
+            <div class="fact-val" data-i18n="fact_lang">Romanian (Native), English (Intermediate)</div>
+          </div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-icon">🚗</div>
+          <div>
+            <div class="fact-lbl" data-i18n="fact_lic_lbl">Driving Licence</div>
+            <div class="fact-val" data-i18n="fact_lic">Category B</div>
+          </div>
+        </div>
+        <div style="margin-top:1rem">
+          <div class="fact-lbl" style="margin-bottom:.6rem" data-i18n="fact_comp_lbl">Core Competencies</div>
+          <div class="comp-list">
+            <span class="tag" data-i18n="comp1">Project Management</span>
+            <span class="tag" data-i18n="comp2">Operations Management</span>
+            <span class="tag" data-i18n="comp3">Team Leadership</span>
+            <span class="tag" data-i18n="comp4">Cadastre &amp; GIS</span>
+            <span class="tag" data-i18n="comp5">Process Improvement</span>
+            <span class="tag" data-i18n="comp6">Stakeholder Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="exp_title">Professional Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <!-- 1 -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card card" data-aos="fade-left">
+          <div class="tl-company">
+            <span data-i18n="exp1_co">Freelance</span>
+          </div>
+          <div class="tl-role" data-i18n="exp1_role">Project &amp; Operations Manager</div>
+          <div class="tl-meta">
+            <span class="date-badge active">06/2024 – <span data-i18n="exp_present">Present</span></span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp1_b1">Coordinating systematic and sporadic cadastre projects funded by local public authorities and national ANCPI programmes.</li>
+            <li data-i18n="exp1_b2">Managing relationships with beneficiaries, authorities, and technical partners across multiple concurrent projects.</li>
+            <li data-i18n="exp1_b3">Applying Business Coaching methodologies and 1:1 leadership sessions to develop team performance.</li>
+            <li data-i18n="exp1_b4">Full project lifecycle management: planning, resource allocation, progress tracking, and quality assurance.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">Project Management</span>
+            <span class="tag">Cadastre</span>
+            <span class="tag">ANCPI</span>
+            <span class="tag">Business Coaching</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card card" data-aos="fade-right">
+          <div class="tl-company">
+            <span data-i18n="exp2_co">Geomatics Integrated Services S.R.L.</span>
+          </div>
+          <div class="tl-role" data-i18n="exp2_role">Project &amp; Operations Manager</div>
+          <div class="tl-meta">
+            <span class="date-badge">10/2018 – 06/2024</span>
+            <span class="date-badge" style="background:var(--ac-s);color:var(--ac);border-color:rgba(var(--ac-r),.3)">5 yrs 8 mos</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp2_b1">Managed a portfolio of 50+ complex systematic cadastre projects concurrently, funded by European and national programmes.</li>
+            <li data-i18n="exp2_b2">Led multidisciplinary teams of up to 70+ specialists — geodetic engineers, IT, legal, and administrative staff.</li>
+            <li data-i18n="exp2_b3">Drove operational improvements achieving 30% reduction in execution time, 25% productivity increase, and 20% efficiency gains.</li>
+            <li data-i18n="exp2_b4">Scaled the company from 3 founding members to 70+ employees; established KPIs, performance tracking, and operational SOPs.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">Operations Management</span>
+            <span class="tag">Team Leadership</span>
+            <span class="tag">KPI Tracking</span>
+            <span class="tag">Process Improvement</span>
+            <span class="tag">Stakeholder Management</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 – concurrent -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card card" data-aos="fade-left">
+          <div class="tl-company">
+            <span data-i18n="exp3_co">Geodinamics Institute – Romanian Academy</span>
+            <span class="concurrent-badge" data-i18n="exp_concurrent">Concurrent</span>
+          </div>
+          <div class="tl-role" data-i18n="exp3_role">Scientific Researcher (Part-time)</div>
+          <div class="tl-meta">
+            <span class="date-badge">12/2019 – 06/2023</span>
+            <span class="date-badge">3 yrs 7 mos</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp3_b1">Participated in national and international geodetic research projects alongside the main management role.</li>
+            <li data-i18n="exp3_b2">Conducted geodetic data analysis, interpretation, and contributed to scientific publications.</li>
+            <li data-i18n="exp3_b3">Maintained rigorous academic standards in scientific writing and research documentation.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">Geodesy</span>
+            <span class="tag">Research</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Scientific Writing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card card" data-aos="fade-right">
+          <div class="tl-company" data-i18n="exp4_co">UTI Grup S.A.</div>
+          <div class="tl-role" data-i18n="exp4_role">Geodetic Engineer</div>
+          <div class="tl-meta">
+            <span class="date-badge">10/2016 – 10/2018</span>
+            <span class="date-badge">2 yrs</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp4_b1">Project management for complex systematic cadastre projects funded by European structural funds.</li>
+            <li data-i18n="exp4_b2">Optimised field survey workflows, reducing repeat visits and improving data quality at collection stage.</li>
+            <li data-i18n="exp4_b3">Direct technical involvement across all project phases from field survey planning to final deliverable submission.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">Geodesy</span>
+            <span class="tag">Cadastre</span>
+            <span class="tag">EU Funded Projects</span>
+            <span class="tag">Process Optimisation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card card" data-aos="fade-left">
+          <div class="tl-company" data-i18n="exp5_co">Terasurvey S.R.L.</div>
+          <div class="tl-role" data-i18n="exp5_role">Geodetic Engineer</div>
+          <div class="tl-meta">
+            <span class="date-badge">04/2016 – 10/2016</span>
+            <span class="date-badge">6 mos</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp5_b1">Performed geodetic field measurements, data processing, and cartographic output production.</li>
+            <li data-i18n="exp5_b2">Prepared cadastral documentation and technical reports in compliance with ANCPI standards.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">Geodetic Measurements</span>
+            <span class="tag">Cadastre</span>
+            <span class="tag">Cartography</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ EDUCATION ═══════════════════════════ -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="edu_title">Education &amp; Certifications</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="edu-type" data-i18n="edu_master">Master's Degree</div>
+        <div class="edu-degree" data-i18n="edu1_deg">Spatial Planning and GIS for Sustainable Development</div>
+        <div class="edu-inst" data-i18n="edu1_inst">Technical University of Civil Engineering Bucharest — Faculty of Geodesy</div>
+        <span class="date-badge">2016 – 2018</span>
+      </div>
+      <div class="edu-card card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="edu-type" data-i18n="edu_bachelor">Bachelor's Degree</div>
+        <div class="edu-degree" data-i18n="edu2_deg">Geodesy – Land Measurements and Cadastre</div>
+        <div class="edu-inst" data-i18n="edu2_inst">Technical University of Civil Engineering Bucharest — Faculty of Geodesy</div>
+        <span class="date-badge">2012 – 2016</span>
+      </div>
+      <div class="edu-card card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="edu-type" data-i18n="edu_bachelor">Bachelor's Degree</div>
+        <div class="edu-degree" data-i18n="edu3_deg">Accounting and Management IT</div>
+        <div class="edu-inst" data-i18n="edu3_inst">Academy of Economic Studies, Bucharest</div>
+        <span class="date-badge">2012 – 2015</span>
+      </div>
+      <div class="edu-card card" data-aos="zoom-in" data-aos-delay="300" style="display:flex;flex-direction:column;justify-content:center">
+        <div class="edu-type" data-i18n="edu_dual_lbl">Dual Degree</div>
+        <div class="edu-degree" data-i18n="edu_dual_desc">Engineering + Economics — rare combination bridging technical precision with business acumen</div>
+      </div>
+    </div>
+    <div style="margin-bottom:1.5rem" data-aos="fade-up">
+      <h3 style="font-size:1.1rem;font-weight:700;color:var(--tx);margin-bottom:1rem" data-i18n="cert_title">Certifications</h3>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card card" data-aos="fade-right">
+        <div class="cert-icon">🎓</div>
+        <div>
+          <div class="cert-name" data-i18n="cert1_name">International Certified Business Coach</div>
+          <div class="cert-meta" data-i18n="cert1_meta">Accredited Certification · 2024</div>
+        </div>
+      </div>
+      <div class="cert-card card" data-aos="fade-left">
+        <div class="cert-icon">⭐</div>
+        <div>
+          <div class="cert-name" data-i18n="cert2_name">Accredited Personal Development Consultant</div>
+          <div class="cert-meta" data-i18n="cert2_meta">Accredited Certification · 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="skills_title">Skills &amp; Competencies</h2>
+    </div>
+    <div class="skills-grid" id="skills-section">
+      <!-- Radar -->
+      <div data-aos="fade-right">
+        <div class="skills-sub" data-i18n="skills_hard">Hard Skills</div>
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+      <!-- Bars -->
+      <div data-aos="fade-left">
+        <div class="skills-sub" data-i18n="skills_soft">Soft Skills</div>
+        <div id="skill-bars">
+          <div class="bar-item">
+            <div class="bar-hdr"><span class="bar-lbl" data-i18n="sk1">Leadership</span><span class="bar-pct">95%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="95"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-hdr"><span class="bar-lbl" data-i18n="sk2">Communication</span><span class="bar-pct">92%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="92"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-hdr"><span class="bar-lbl" data-i18n="sk3">Decision-Making</span><span class="bar-pct">90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="90"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-hdr"><span class="bar-lbl" data-i18n="sk4">Organisation</span><span class="bar-pct">93%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="93"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-hdr"><span class="bar-lbl" data-i18n="sk5">Adaptability</span><span class="bar-pct">88%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="88"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-hdr"><span class="bar-lbl" data-i18n="sk6">Analytical Thinking</span><span class="bar-pct">86%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="86"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      <div class="skills-sub" data-i18n="skills_tools">Tools &amp; Software</div>
+      <div class="tools-wrap">
+        <span class="tool-badge">Microsoft Excel</span>
+        <span class="tool-badge">Microsoft Word</span>
+        <span class="tool-badge">Microsoft Outlook</span>
+        <span class="tool-badge">Microsoft Project</span>
+        <span class="tool-badge">AutoCAD</span>
+        <span class="tool-badge">ArcGIS</span>
+        <span class="tool-badge">QGIS</span>
+        <span class="tool-badge">ANCPI Platforms</span>
+        <span class="tool-badge">Google Workspace</span>
+        <span class="tool-badge">Leica Geo Office</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ACHIEVEMENTS ═══════════════════════════ -->
+<section id="achievements" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="ach_title">Key Results</h2>
+      <p data-i18n="ach_sub">Measurable impact across projects and organisations</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card card" data-aos="fade-up" data-aos-delay="0">
+        <div class="metric-ico">📋</div>
+        <div class="metric-val"><span class="counter" data-target="50" data-suffix="+">0+</span></div>
+        <div class="metric-lbl" data-i18n="m1">Complex Projects Managed</div>
+      </div>
+      <div class="metric-card card" data-aos="fade-up" data-aos-delay="80">
+        <div class="metric-ico">👥</div>
+        <div class="metric-val"><span class="counter" data-target="70" data-suffix="+">0+</span></div>
+        <div class="metric-lbl" data-i18n="m2">Specialists Led</div>
+      </div>
+      <div class="metric-card card" data-aos="fade-up" data-aos-delay="160">
+        <div class="metric-ico">⚡</div>
+        <div class="metric-val"><span class="counter" data-target="30" data-suffix="%">0%</span></div>
+        <div class="metric-lbl" data-i18n="m3">Execution Time Reduction</div>
+      </div>
+      <div class="metric-card card" data-aos="fade-up" data-aos-delay="0">
+        <div class="metric-ico">📈</div>
+        <div class="metric-val"><span class="counter" data-target="25" data-suffix="%">0%</span></div>
+        <div class="metric-lbl" data-i18n="m4">Productivity Increase</div>
+      </div>
+      <div class="metric-card card" data-aos="fade-up" data-aos-delay="80">
+        <div class="metric-ico">🔧</div>
+        <div class="metric-val"><span class="counter" data-target="20" data-suffix="%">0%</span></div>
+        <div class="metric-lbl" data-i18n="m5">Operational Efficiency Gain</div>
+      </div>
+      <div class="metric-card card" data-aos="fade-up" data-aos-delay="160">
+        <div class="metric-ico">✅</div>
+        <div class="metric-val"><span class="counter" data-target="15" data-suffix="%">0%</span></div>
+        <div class="metric-lbl" data-i18n="m6">Deliverable Quality Improvement</div>
+      </div>
+      <div class="metric-wide card" data-aos="fade-up">
+        <div class="metric-ico">🤖</div>
+        <div class="metric-val"><span class="counter" data-target="70" data-suffix="%+">0%+</span></div>
+        <div class="metric-content">
+          <div class="metric-lbl" data-i18n="m7">Automated Document Extraction</div>
+          <div class="metric-desc" data-i18n="m7_desc">Developed and implemented automated workflows for extracting data from legal and cadastral documents, drastically reducing manual processing time and human error across the project portfolio.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PORTFOLIO ═══════════════════════════ -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="port_title">Portfolio Highlights</h2>
+      <p data-i18n="port_sub">Selected projects demonstrating operational excellence</p>
+    </div>
+    <div class="portfolio-grid">
+
+      <div class="proj-card card" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-tag" data-i18n="p1_tag">Operations &amp; Automation</div>
+        <div class="proj-title" data-i18n="p1_title">Large-Scale Cadastral Automation — Gilău, Cluj</div>
+        <p class="proj-desc" data-i18n="p1_desc">Led the systematic property registration campaign covering 20,000+ properties in a mixed hill-and-mountain zone, managing complex logistics, multi-team coordination, and stakeholder relations with OCPI Cluj.</p>
+        <div class="proj-outcome">🏆 <span data-i18n="p1_out">On-time delivery · OCPI quality approval · 70%+ document automation</span></div>
+        <div class="proj-skills">
+          <span class="tag">Project Management</span><span class="tag">GIS</span><span class="tag">Automation</span><span class="tag">ANCPI/OCPI</span>
+        </div>
+        <button class="btn btn-outline" style="font-size:.8rem;padding:.4rem .9rem" onclick="openModal('p1')" data-i18n="port_details">View Details</button>
+      </div>
+
+      <div class="proj-card card" data-aos="fade-up" data-aos-delay="100">
+        <div class="proj-tag" data-i18n="p2_tag">Team Scaling &amp; Process Design</div>
+        <div class="proj-title" data-i18n="p2_title">Organisation Scaling: 3 → 70+ Specialists</div>
+        <p class="proj-desc" data-i18n="p2_desc">Designed and implemented the operational framework that scaled Geomatics Integrated Services from a 3-person startup to a 70+ specialist organisation managing concurrent national projects.</p>
+        <div class="proj-outcome">📊 <span data-i18n="p2_out">30% time reduction · 25% productivity increase · KPI system built from scratch</span></div>
+        <div class="proj-skills">
+          <span class="tag">Operations</span><span class="tag">HR Scaling</span><span class="tag">KPIs</span><span class="tag">SOPs</span>
+        </div>
+        <button class="btn btn-outline" style="font-size:.8rem;padding:.4rem .9rem" onclick="openModal('p2')" data-i18n="port_details">View Details</button>
+      </div>
+
+      <div class="proj-card card" data-aos="fade-up" data-aos-delay="200">
+        <div class="proj-tag" data-i18n="p3_tag">Research &amp; Geodesy</div>
+        <div class="proj-title" data-i18n="p3_title">Geodetic Research — Romanian Academy</div>
+        <p class="proj-desc" data-i18n="p3_desc">Contributed to national and international geodetic research projects at the Geodinamics Institute, conducting geospatial data analysis and co-authoring scientific documentation over 3.5 years.</p>
+        <div class="proj-outcome">🔬 <span data-i18n="p3_out">National &amp; international research contributions · Scientific publications</span></div>
+        <div class="proj-skills">
+          <span class="tag">Geodesy</span><span class="tag">GIS</span><span class="tag">Research</span><span class="tag">Data Analysis</span>
+        </div>
+        <button class="btn btn-outline" style="font-size:.8rem;padding:.4rem .9rem" onclick="openModal('p3')" data-i18n="port_details">View Details</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 data-i18n="contact_title">Get In Touch</h2>
+      <p data-i18n="contact_sub">Interested in working together? I'd love to hear from you.</p>
+    </div>
+    <div class="contact-grid">
+      <!-- Form -->
+      <div data-aos="fade-right">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name" data-i18n="f_name_lbl">Name</label>
+              <input type="text" id="f-name" name="name" data-i18n-ph="f_name_ph" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="f-email" data-i18n="f_email_lbl">Email</label>
+              <input type="email" id="f-email" name="email" data-i18n-ph="f_email_ph" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-subject" data-i18n="f_subj_lbl">Subject</label>
+            <select id="f-subject" name="subject">
+              <option data-i18n="f_opt1">Operations Manager Opportunity</option>
+              <option data-i18n="f_opt2">Project Manager Role</option>
+              <option data-i18n="f_opt3">Freelance Collaboration</option>
+              <option data-i18n="f_opt4">Research Partnership</option>
+              <option data-i18n="f_opt5">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-msg" data-i18n="f_msg_lbl">Message</label>
+            <textarea id="f-msg" name="message" data-i18n-ph="f_msg_ph" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="f_send">Send Message</button>
+          <div class="form-msg" id="form-msg"></div>
+        </form>
+      </div>
+      <!-- Details -->
+      <div class="contact-details" data-aos="fade-left">
+        <div class="cd-item">
+          <div class="cd-icon">✉️</div>
+          <div class="cd-content">
+            <div class="cd-lbl">Email</div>
+            <div class="cd-val">sima.alexandra.ramona@gmail.com</div>
+          </div>
+          <button class="copy-btn" onclick="copyText('sima.alexandra.ramona@gmail.com', this)" data-i18n="copy_btn">Copy</button>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon">📞</div>
+          <div class="cd-content">
+            <div class="cd-lbl" data-i18n="fact_ph_lbl">Phone</div>
+            <div class="cd-val">+40 720 254 166</div>
+          </div>
+          <button class="copy-btn" onclick="copyText('+40720254166', this)" data-i18n="copy_btn">Copy</button>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon">📍</div>
+          <div class="cd-content">
+            <div class="cd-lbl" data-i18n="fact_loc_lbl">Location</div>
+            <div class="cd-val" data-i18n="fact_loc">București, Romania</div>
+          </div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="cd-content">
+            <div class="cd-lbl">LinkedIn</div>
+            <div class="cd-val"><a href="#" id="linkedin-link2" style="color:var(--ac)">linkedin.com/in/alexandra-ramona-sima</a></div>
+          </div>
+        </div>
+        <div class="cd-item" style="background:var(--ac-s);border:1px solid rgba(var(--ac-r),.25)">
+          <div class="cd-icon">🎯</div>
+          <div class="cd-content">
+            <div class="cd-lbl" data-i18n="target_lbl">Target Roles</div>
+            <div class="cd-val" style="font-size:.8rem;color:var(--ac)" data-i18n="target_val">Operations Manager · Project Manager · Technical PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        © <span id="yr"></span> <strong>Alexandra-Ramona Sima</strong>. <span data-i18n="footer_rights">All rights reserved.</span>
+      </div>
+      <div class="footer-right">
+        <button class="btn btn-outline" style="font-size:.8rem;padding:.4rem .9rem" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-i18n="back_top">↑ Back to top</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ MODAL ═══════════════════════════ -->
+<div id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div id="modal-box">
+    <button id="modal-close" onclick="closeModal()">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCRIPTS ═══════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+/* ── TRANSLATIONS ── */
+const T = {
+  en: {
+    nav_about:'About', nav_exp:'Experience', nav_edu:'Education',
+    nav_skills:'Skills', nav_ach:'Achievements', nav_contact:'Contact', nav_dl:'Download CV',
+    hero_badge:'Available for new projects',
+    hero_desc:'Professional with 9+ years managing complex cadastre and infrastructure projects across Romania, leading multidisciplinary teams and consistently delivering results on time and within legislative standards.',
+    hero_cta1:'View My Work', hero_cta2:'Contact Me',
+    stat1:'Years Experience', stat2:'Projects Managed',
+    about_title:'About Me',
+    about_p1:"I bring a rare combination of technical expertise in geodesy and cadastre with strong operational management capabilities, backed by two bachelor's degrees and a Master's in Spatial Planning & GIS from the Technical University of Civil Engineering Bucharest.",
+    about_p2:"Over 9 years I've scaled an organisation from 3 to 70+ specialists, managed portfolios of 50+ concurrent projects funded by European and national ANCPI programmes, and driven meaningful process improvements — including a 30% reduction in execution time and 70%+ automation of document processing workflows.",
+    about_p3:'As a certified International Business Coach and accredited Personal Development Consultant, I lead with a people-first approach, building high-performance teams in technically demanding and logistically complex field environments.',
+    fact_loc_lbl:'Location', fact_loc:'București, Romania',
+    fact_ph_lbl:'Phone', fact_lang_lbl:'Languages',
+    fact_lang:'Romanian (Native), English (Intermediate)',
+    fact_lic_lbl:'Driving Licence', fact_lic:'Category B',
+    fact_comp_lbl:'Core Competencies',
+    comp1:'Project Management', comp2:'Operations Management', comp3:'Team Leadership',
+    comp4:'Cadastre & GIS', comp5:'Process Improvement', comp6:'Stakeholder Management',
+    exp_title:'Professional Experience', exp_present:'Present', exp_concurrent:'Concurrent',
+    exp1_co:'Freelance', exp1_role:'Project & Operations Manager',
+    exp1_b1:'Coordinating systematic and sporadic cadastre projects funded by local public authorities and national ANCPI programmes.',
+    exp1_b2:'Managing relationships with beneficiaries, authorities, and technical partners across multiple concurrent projects.',
+    exp1_b3:'Applying Business Coaching methodologies and 1:1 leadership sessions to develop team performance.',
+    exp1_b4:'Full project lifecycle management: planning, resource allocation, progress tracking, and quality assurance.',
+    exp2_co:'Geomatics Integrated Services S.R.L.', exp2_role:'Project & Operations Manager',
+    exp2_b1:'Managed a portfolio of 50+ complex systematic cadastre projects concurrently, funded by European and national programmes.',
+    exp2_b2:'Led multidisciplinary teams of up to 70+ specialists — geodetic engineers, IT, legal, and administrative staff.',
+    exp2_b3:'Drove operational improvements achieving 30% reduction in execution time, 25% productivity increase, and 20% efficiency gains.',
+    exp2_b4:'Scaled the company from 3 founding members to 70+ employees; established KPIs, performance tracking, and operational SOPs.',
+    exp3_co:'Geodinamics Institute – Romanian Academy', exp3_role:'Scientific Researcher (Part-time)',
+    exp3_b1:'Participated in national and international geodetic research projects alongside the main management role.',
+    exp3_b2:'Conducted geodetic data analysis, interpretation, and contributed to scientific publications.',
+    exp3_b3:'Maintained rigorous academic standards in scientific writing and research documentation.',
+    exp4_co:'UTI Grup S.A.', exp4_role:'Geodetic Engineer',
+    exp4_b1:'Project management for complex systematic cadastre projects funded by European structural funds.',
+    exp4_b2:'Optimised field survey workflows, reducing repeat visits and improving data quality at collection stage.',
+    exp4_b3:'Direct technical involvement across all project phases from field survey planning to final deliverable submission.',
+    exp5_co:'Terasurvey S.R.L.', exp5_role:'Geodetic Engineer',
+    exp5_b1:'Performed geodetic field measurements, data processing, and cartographic output production.',
+    exp5_b2:'Prepared cadastral documentation and technical reports in compliance with ANCPI standards.',
+    edu_title:'Education & Certifications', edu_master:"Master's Degree", edu_bachelor:"Bachelor's Degree",
+    edu1_deg:'Spatial Planning and GIS for Sustainable Development',
+    edu1_inst:'Technical University of Civil Engineering Bucharest — Faculty of Geodesy',
+    edu2_deg:'Geodesy – Land Measurements and Cadastre',
+    edu2_inst:'Technical University of Civil Engineering Bucharest — Faculty of Geodesy',
+    edu3_deg:'Accounting and Management IT',
+    edu3_inst:'Academy of Economic Studies, Bucharest',
+    edu_dual_lbl:'Dual Degree',
+    edu_dual_desc:'Engineering + Economics — rare combination bridging technical precision with business acumen',
+    cert_title:'Certifications',
+    cert1_name:'International Certified Business Coach', cert1_meta:'Accredited Certification · 2024',
+    cert2_name:'Accredited Personal Development Consultant', cert2_meta:'Accredited Certification · 2025',
+    skills_title:'Skills & Competencies', skills_hard:'Hard Skills', skills_soft:'Soft Skills', skills_tools:'Tools & Software',
+    sk1:'Leadership', sk2:'Communication', sk3:'Decision-Making', sk4:'Organisation', sk5:'Adaptability', sk6:'Analytical Thinking',
+    ach_title:'Key Results', ach_sub:'Measurable impact across projects and organisations',
+    m1:'Complex Projects Managed', m2:'Specialists Led', m3:'Execution Time Reduction',
+    m4:'Productivity Increase', m5:'Operational Efficiency Gain', m6:'Deliverable Quality Improvement',
+    m7:'Automated Document Extraction',
+    m7_desc:'Developed and implemented automated workflows for extracting data from legal and cadastral documents, drastically reducing manual processing time and human error across the project portfolio.',
+    port_title:'Portfolio Highlights', port_sub:'Selected projects demonstrating operational excellence', port_details:'View Details',
+    p1_tag:'Operations & Automation', p1_title:'Large-Scale Cadastral Automation — Gilău, Cluj',
+    p1_desc:'Led the systematic property registration campaign covering 20,000+ properties in a mixed hill-and-mountain zone, managing complex logistics, multi-team coordination, and stakeholder relations with OCPI Cluj.',
+    p1_out:'On-time delivery · OCPI quality approval · 70%+ document automation',
+    p2_tag:'Team Scaling & Process Design', p2_title:'Organisation Scaling: 3 → 70+ Specialists',
+    p2_desc:'Designed and implemented the operational framework that scaled Geomatics Integrated Services from a 3-person startup to a 70+ specialist organisation managing concurrent national projects.',
+    p2_out:'30% time reduction · 25% productivity increase · KPI system built from scratch',
+    p3_tag:'Research & Geodesy', p3_title:'Geodetic Research — Romanian Academy',
+    p3_desc:'Contributed to national and international geodetic research projects at the Geodinamics Institute, conducting geospatial data analysis and co-authoring scientific documentation over 3.5 years.',
+    p3_out:'National & international research contributions · Scientific publications',
+    contact_title:'Get In Touch', contact_sub:"Interested in working together? I'd love to hear from you.",
+    f_name_lbl:'Name', f_name_ph:'Your name', f_email_lbl:'Email', f_email_ph:'your@email.com',
+    f_subj_lbl:'Subject', f_msg_lbl:'Message', f_msg_ph:'Your message...', f_send:'Send Message',
+    f_opt1:'Operations Manager Opportunity', f_opt2:'Project Manager Role',
+    f_opt3:'Freelance Collaboration', f_opt4:'Research Partnership', f_opt5:'Other',
+    copy_btn:'Copy', target_lbl:'Target Roles',
+    target_val:'Operations Manager · Project Manager · Technical PM',
+    footer_rights:'All rights reserved.', back_top:'↑ Back to top',
+    typed:['Operations Manager – Engineering','Project Manager – Infrastructure','Technical Project Manager – Geodesy'],
+    radar_labels:['Project Mgmt','Planning','Team Mgmt','Process Improvement','KPI Tracking','Stakeholder Mgmt','Contract Mgmt','Budgeting'],
+  },
+  ro: {
+    nav_about:'Despre', nav_exp:'Experiență', nav_edu:'Educație',
+    nav_skills:'Competențe', nav_ach:'Realizări', nav_contact:'Contact', nav_dl:'Descarcă CV',
+    hero_badge:'Disponibilă pentru proiecte noi',
+    hero_desc:'Profesionistă cu 9+ ani de experiență în coordonarea proiectelor complexe de cadastru și infrastructură în România, conducând echipe multidisciplinare și livrând rezultate la termen și conform standardelor legislative.',
+    hero_cta1:'Vezi Proiectele', hero_cta2:'Contactează-mă',
+    stat1:'Ani Experiență', stat2:'Proiecte Gestionate',
+    about_title:'Despre Mine',
+    about_p1:'Aduc o combinație rară de expertiză tehnică în geodezie și cadastru cu capabilități puternice de management operațional, susținute de două licențe și un Master în Planificare Spațială & GIS la Universitatea Tehnică de Construcții din București.',
+    about_p2:'În 9+ ani am crescut o organizație de la 3 la 70+ specialiști, am gestionat portofolii de 50+ proiecte concurente finanțate din fonduri europene și naționale ANCPI, și am generat îmbunătățiri operaționale semnificative — inclusiv o reducere de 30% a timpului de execuție și 70%+ automatizare a procesării documentelor.',
+    about_p3:'Ca Business Coach internațional certificat și Consultant de Dezvoltare Personală acreditat, conduc cu o abordare orientată spre oameni, construind echipe performante în medii tehnic exigente și logistic complexe.',
+    fact_loc_lbl:'Locație', fact_loc:'București, România',
+    fact_ph_lbl:'Telefon', fact_lang_lbl:'Limbi',
+    fact_lang:'Română (Nativă), Engleză (Intermediar)',
+    fact_lic_lbl:'Permis Auto', fact_lic:'Categoria B',
+    fact_comp_lbl:'Competențe Cheie',
+    comp1:'Management de Proiect', comp2:'Management Operațional', comp3:'Leadership Echipă',
+    comp4:'Cadastru & GIS', comp5:'Îmbunătățire Procese', comp6:'Managementul Stakeholderilor',
+    exp_title:'Experiență Profesională', exp_present:'Prezent', exp_concurrent:'Concurent',
+    exp1_co:'Freelance', exp1_role:'Manager Proiect & Operațiuni',
+    exp1_b1:'Coordonarea proiectelor de cadastru sistematic și sporadic finanțate de autorități publice locale și programe naționale ANCPI.',
+    exp1_b2:'Gestionarea relațiilor cu beneficiarii, autoritățile și partenerii tehnici în multiple proiecte concurente.',
+    exp1_b3:'Aplicarea metodologiilor de Business Coaching și sesiuni de leadership 1:1 pentru dezvoltarea performanței echipei.',
+    exp1_b4:'Management complet al ciclului de proiect: planificare, alocare resurse, monitorizare progres și asigurarea calității.',
+    exp2_co:'Geomatics Integrated Services S.R.L.', exp2_role:'Manager Proiect & Operațiuni',
+    exp2_b1:'Gestionat un portofoliu de 50+ proiecte complexe de cadastru sistematic concurente, finanțate din programe europene și naționale.',
+    exp2_b2:'Condus echipe multidisciplinare de până la 70+ specialiști — ingineri geodezi, IT, juridic și administrativ.',
+    exp2_b3:'Implementat îmbunătățiri operaționale: 30% reducere timp execuție, 25% creștere productivitate, 20% creștere eficiență.',
+    exp2_b4:'Scalat compania de la 3 fondatori la 70+ angajați; stabilit KPI-uri, monitorizarea performanței și proceduri operaționale.',
+    exp3_co:'Institutul de Geodinamică – Academia Română', exp3_role:'Cercetător Științific (Part-time)',
+    exp3_b1:'Participat în proiecte de cercetare geodezică naționale și internaționale în paralel cu rolul principal de management.',
+    exp3_b2:'Realizat analize și interpretări de date geodezice, contribuind la publicații științifice.',
+    exp3_b3:'Menținut standarde academice riguroase în redactarea științifică și documentarea cercetării.',
+    exp4_co:'UTI Grup S.A.', exp4_role:'Inginer Geodez',
+    exp4_b1:'Managementul proiectelor complexe de cadastru sistematic finanțate din fonduri structurale europene.',
+    exp4_b2:'Optimizat fluxurile de lucru în teren, reducând vizitele repetate și îmbunătățind calitatea datelor la colectare.',
+    exp4_b3:'Implicare tehnică directă în toate fazele proiectului, de la planificarea ridicărilor topografice până la livrarea finală.',
+    exp5_co:'Terasurvey S.R.L.', exp5_role:'Inginer Geodez',
+    exp5_b1:'Efectuat măsurători geodezice de teren, procesare date și producție de materiale cartografice.',
+    exp5_b2:'Pregătit documentație cadastrală și rapoarte tehnice conform standardelor ANCPI.',
+    edu_title:'Educație & Certificări', edu_master:'Master', edu_bachelor:'Licență',
+    edu1_deg:'Planificare Spațială și GIS pentru Dezvoltare Durabilă',
+    edu1_inst:'Universitatea Tehnică de Construcții București — Facultatea de Geodezie',
+    edu2_deg:'Geodezie – Măsurători Terestre și Cadastru',
+    edu2_inst:'Universitatea Tehnică de Construcții București — Facultatea de Geodezie',
+    edu3_deg:'Contabilitate și Informatică de Gestiune',
+    edu3_inst:'Academia de Studii Economice, București',
+    edu_dual_lbl:'Dublă Licență',
+    edu_dual_desc:'Inginerie + Economie — combinație rară care unește precizia tehnică cu acuitatea în afaceri',
+    cert_title:'Certificări',
+    cert1_name:'Business Coach Internațional Certificat', cert1_meta:'Certificare Acreditată · 2024',
+    cert2_name:'Consultant Acreditat de Dezvoltare Personală', cert2_meta:'Certificare Acreditată · 2025',
+    skills_title:'Competențe & Abilități', skills_hard:'Competențe Tehnice', skills_soft:'Abilități Interpersonale', skills_tools:'Instrumente & Software',
+    sk1:'Leadership', sk2:'Comunicare', sk3:'Luarea Deciziilor', sk4:'Organizare', sk5:'Adaptabilitate', sk6:'Gândire Analitică',
+    ach_title:'Rezultate Cheie', ach_sub:'Impact măsurabil în proiecte și organizații',
+    m1:'Proiecte Complexe Gestionate', m2:'Specialiști Coordonați', m3:'Reducere Timp de Execuție',
+    m4:'Creștere Productivitate', m5:'Creștere Eficiență Operațională', m6:'Îmbunătățire Calitate Livrabile',
+    m7:'Extragere Automată Documente',
+    m7_desc:'Dezvoltat și implementat fluxuri automate pentru extragerea datelor din documente juridice și cadastrale, reducând drastic timpul de procesare manuală și erorile umane în portofoliul de proiecte.',
+    port_title:'Proiecte Reprezentative', port_sub:'Proiecte selectate care demonstrează excelență operațională', port_details:'Detalii',
+    p1_tag:'Operațiuni & Automatizare', p1_title:'Cadastru la Scară Mare — Gilău, Cluj',
+    p1_desc:'Coordonat campania de înregistrare sistematică a proprietăților acoperind 20.000+ imobile într-o zonă de deal și munte, gestionând logistica complexă, coordonarea multi-echipă și relațiile cu OCPI Cluj.',
+    p1_out:'Livrare la termen · Aprobare calitate OCPI · 70%+ automatizare documente',
+    p2_tag:'Scalare Echipă & Design Procese', p2_title:'Scalare Organizație: 3 → 70+ Specialiști',
+    p2_desc:'Proiectat și implementat cadrul operațional care a scalat Geomatics Integrated Services de la un startup de 3 persoane la o organizație de 70+ specialiști care gestionează proiecte naționale concurente.',
+    p2_out:'30% reducere timp · 25% creștere productivitate · Sistem KPI construit de la zero',
+    p3_tag:'Cercetare & Geodezie', p3_title:'Cercetare Geodezică — Academia Română',
+    p3_desc:'Contribuit la proiecte de cercetare geodezică naționale și internaționale la Institutul de Geodinamică, realizând analize de date geospațiale și co-autorând documentație științifică pe parcursul a 3,5 ani.',
+    p3_out:'Contribuții cercetare națională & internațională · Publicații științifice',
+    contact_title:'Contactează-mă', contact_sub:'Ești interesat să lucrăm împreună? Aș fi bucuroasă să te aud.',
+    f_name_lbl:'Nume', f_name_ph:'Numele tău', f_email_lbl:'Email', f_email_ph:'email@tau.com',
+    f_subj_lbl:'Subiect', f_msg_lbl:'Mesaj', f_msg_ph:'Mesajul tău...', f_send:'Trimite Mesaj',
+    f_opt1:'Oportunitate Manager Operațiuni', f_opt2:'Post Manager de Proiect',
+    f_opt3:'Colaborare Freelance', f_opt4:'Parteneriat Cercetare', f_opt5:'Altele',
+    copy_btn:'Copiază', target_lbl:'Roluri Țintă',
+    target_val:'Manager Operațiuni · Manager de Proiect · PM Tehnic',
+    footer_rights:'Toate drepturile rezervate.', back_top:'↑ Înapoi sus',
+    typed:['Manager Operațiuni – Inginerie','Manager de Proiect – Infrastructură','Manager Tehnic de Proiect – Geodezie'],
+    radar_labels:['Management Proiect','Planificare','Mgmt Echipă','Îmbun. Procese','Urmărire KPI','Mgmt Stakeholderi','Mgmt Contracte','Bugetare'],
+  }
+};
+
+/* ── STATE ── */
+let lang = localStorage.getItem('lang') || 'en';
+let theme = localStorage.getItem('theme') || 'dark';
+let typedInstance = null;
+let radarChart = null;
+
+/* ── APPLY THEME ── */
+function applyTheme(t) {
+  theme = t;
+  document.documentElement.setAttribute('data-theme', t);
+  document.getElementById('theme-btn').textContent = t === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('theme', t);
+  if (radarChart) updateChartTheme();
+}
+
+/* ── APPLY LANGUAGE ── */
+function applyLang(l) {
+  lang = l;
+  document.documentElement.lang = l;
+  document.getElementById('lang-btn').textContent = l === 'en' ? 'RO' : 'EN';
+  localStorage.setItem('lang', l);
+  const tx = T[l];
+
+  // text content
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    if (tx[k] !== undefined) el.textContent = tx[k];
+  });
+
+  // placeholders
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const k = el.getAttribute('data-i18n-ph');
+    if (tx[k] !== undefined) el.placeholder = tx[k];
+  });
+
+  // Typed.js – re-init
+  if (typedInstance) { typedInstance.destroy(); }
+  typedInstance = new Typed('#typed-el', {
+    strings: tx.typed,
+    typeSpeed: 60, backSpeed: 35, loop: true, backDelay: 2000,
+    onComplete: () => {}
+  });
+
+  // Radar chart labels
+  if (radarChart) {
+    radarChart.data.labels = tx.radar_labels;
+    radarChart.update();
+  }
+}
+
+/* ── CHART ── */
+function initChart() {
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+  const gridColor = isDark ? 'rgba(255,255,255,.08)' : 'rgba(0,0,0,.08)';
+  const labelColor = isDark ? '#8B949E' : '#57606A';
+
+  radarChart = new Chart(document.getElementById('radarChart'), {
+    type: 'radar',
+    data: {
+      labels: T[lang].radar_labels,
+      datasets: [{
+        label: '',
+        data: [95, 90, 88, 85, 87, 90, 82, 80],
+        backgroundColor: 'rgba(0,201,167,.15)',
+        borderColor: '#00C9A7',
+        pointBackgroundColor: '#00C9A7',
+        pointBorderColor: '#00C9A7',
+        pointRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        r: {
+          min: 60, max: 100,
+          ticks: { display: false, stepSize: 10 },
+          grid: { color: gridColor },
+          angleLines: { color: gridColor },
+          pointLabels: { color: labelColor, font: { size: 11, family: "'Inter', sans-serif" } }
+        }
+      }
+    }
+  });
+}
+
+function updateChartTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+  const gridColor = isDark ? 'rgba(255,255,255,.08)' : 'rgba(0,0,0,.08)';
+  const labelColor = isDark ? '#8B949E' : '#57606A';
+  radarChart.options.scales.r.grid.color = gridColor;
+  radarChart.options.scales.r.angleLines.color = gridColor;
+  radarChart.options.scales.r.pointLabels.color = labelColor;
+  radarChart.update();
+}
+
+/* ── SKILL BARS ── */
+let barsAnimated = false;
+const barObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting && !barsAnimated) {
+      barsAnimated = true;
+      document.querySelectorAll('.bar-fill').forEach(b => {
+        b.style.width = b.dataset.w + '%';
+      });
+    }
+  });
+}, { threshold: 0.3 });
+
+/* ── COUNTERS ── */
+function animateCounter(el, target, suffix, duration) {
+  const start = performance.now();
+  el.classList.add('counted');
+  const tick = (now) => {
+    const p = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(ease * target) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.counter:not(.counted)').forEach(c => {
+        animateCounter(c, +c.dataset.target, c.dataset.suffix, 2000);
+      });
+    }
+  });
+}, { threshold: 0.4 });
+
+/* ── MODAL DATA ── */
+const MODAL = {
+  p1: {
+    en: {
+      tag:'Operations & Automation',
+      title:'Large-Scale Cadastral Automation — Gilău, Cluj County',
+      body:`<p>This project involved the systematic property registration of 20,000+ parcels in the rural commune of Gilău, Cluj County — an area characterised by difficult hill-and-mountain terrain and dispersed rural settlements.</p>
+      <p><strong>Key challenges addressed:</strong></p>
+      <ul>
+        <li>Coordinating multiple field survey teams across inaccessible terrain simultaneously</li>
+        <li>Managing legal document collection from 20,000+ property owners</li>
+        <li>Implementing automated extraction of ownership data from historical legal documents (70%+ automation rate achieved)</li>
+        <li>Maintaining quality standards required for OCPI Cluj final approval</li>
+        <li>Stakeholder management with local mayoralty, ANCPI, and OCPI representatives</li>
+      </ul>
+      <p><strong>Outcome:</strong></p>
+      <div class="modal-outcome">✅ On-time delivery · Full OCPI quality approval · 70%+ document processing automated · Zero major rework cycles</div>`,
+    },
+    ro: {
+      tag:'Operațiuni & Automatizare',
+      title:'Cadastru la Scară Mare — Gilău, județul Cluj',
+      body:`<p>Acest proiect a implicat înregistrarea sistematică a 20.000+ parcele în comuna rurală Gilău, județul Cluj — o zonă caracterizată prin teren accidentat de deal și munte și așezări rurale dispersate.</p>
+      <p><strong>Provocări cheie abordate:</strong></p>
+      <ul>
+        <li>Coordonarea mai multor echipe de ridicări topo în teren inaccesibil simultan</li>
+        <li>Gestionarea colectării documentelor juridice de la 20.000+ proprietari</li>
+        <li>Implementarea extragerii automate a datelor de proprietate din documente juridice istorice (rată de automatizare 70%+)</li>
+        <li>Menținerea standardelor de calitate necesare pentru aprobarea finală OCPI Cluj</li>
+        <li>Managementul stakeholderilor: primărie locală, ANCPI și reprezentanți OCPI</li>
+      </ul>
+      <p><strong>Rezultat:</strong></p>
+      <div class="modal-outcome">✅ Livrare la termen · Aprobare completă calitate OCPI · 70%+ procesare documente automatizată · Zero cicluri majore de refacere</div>`,
+    }
+  },
+  p2: {
+    en: {
+      tag:'Team Scaling & Process Design',
+      title:'Organisation Scaling: 3 → 70+ Specialists',
+      body:`<p>When joining Geomatics Integrated Services as one of the founding operational leads, the company had 3 people and a vision. Over 5 years 8 months, the organisation grew to 70+ specialists and a national project portfolio.</p>
+      <p><strong>What was built:</strong></p>
+      <ul>
+        <li>Full HR onboarding and training framework for geodetic engineers, IT specialists, and administrative staff</li>
+        <li>KPI dashboard and performance monitoring system used across all 50+ concurrent projects</li>
+        <li>Standard Operating Procedures (SOPs) for every phase of systematic cadastre project execution</li>
+        <li>Resource allocation model balancing 70+ specialists across projects with varying timelines and regulatory deadlines</li>
+        <li>Contract management and compliance tracking system aligned with ANCPI and European fund requirements</li>
+      </ul>
+      <div class="modal-outcome">📊 30% execution time reduction · 25% productivity increase · 20% operational efficiency gain · 15% deliverable quality improvement</div>`,
+    },
+    ro: {
+      tag:'Scalare Echipă & Design Procese',
+      title:'Scalare Organizație: 3 → 70+ Specialiști',
+      body:`<p>La intrarea în Geomatics Integrated Services ca unul dintre liderii operaționali fondatori, compania avea 3 oameni și o viziune. În 5 ani și 8 luni, organizația a crescut la 70+ specialiști și un portofoliu național de proiecte.</p>
+      <p><strong>Ce s-a construit:</strong></p>
+      <ul>
+        <li>Cadru complet de onboarding și formare HR pentru ingineri geodezi, specialiști IT și personal administrativ</li>
+        <li>Dashboard KPI și sistem de monitorizare a performanței utilizat în toate cele 50+ proiecte concurente</li>
+        <li>Proceduri Operaționale Standard (SOP) pentru fiecare fază a execuției proiectelor de cadastru sistematic</li>
+        <li>Model de alocare a resurselor pentru echilibrarea a 70+ specialiști în proiecte cu termene și deadline-uri regulatory variate</li>
+        <li>Sistem de management contracte și urmărire conformitate aliniat cerințelor ANCPI și fondurilor europene</li>
+      </ul>
+      <div class="modal-outcome">📊 30% reducere timp execuție · 25% creștere productivitate · 20% câștig eficiență · 15% îmbunătățire calitate livrabile</div>`,
+    }
+  },
+  p3: {
+    en: {
+      tag:'Research & Geodesy',
+      title:'Geodetic Research — Geodinamics Institute, Romanian Academy',
+      body:`<p>In parallel with the main management role at Geomatics, this part-time research position at the Geodinamics Institute of the Romanian Academy spanned 3 years and 7 months (2019–2023).</p>
+      <p><strong>Research contributions:</strong></p>
+      <ul>
+        <li>Active participation in national and international geodetic and geodynamic research projects</li>
+        <li>Geospatial data collection, processing, and analysis using professional geodetic instruments and GIS software</li>
+        <li>Co-authorship of scientific documentation and research reports</li>
+        <li>Collaboration with academic researchers and international project partners</li>
+        <li>Application of advanced geodetic methodologies to real-world monitoring and measurement challenges</li>
+      </ul>
+      <div class="modal-outcome">🔬 Maintained academic research output alongside full-time operational management — demonstrating exceptional capacity and breadth of expertise</div>`,
+    },
+    ro: {
+      tag:'Cercetare & Geodezie',
+      title:'Cercetare Geodezică — Institutul de Geodinamică, Academia Română',
+      body:`<p>În paralel cu rolul principal de management la Geomatics, această poziție de cercetare part-time la Institutul de Geodinamică al Academiei Române s-a desfășurat pe parcursul a 3 ani și 7 luni (2019–2023).</p>
+      <p><strong>Contribuții în cercetare:</strong></p>
+      <ul>
+        <li>Participare activă în proiecte naționale și internaționale de cercetare geodezică și geodinamică</li>
+        <li>Colectare, procesare și analiză date geospațiale cu instrumente geodezice profesionale și software GIS</li>
+        <li>Co-autorare documentație științifică și rapoarte de cercetare</li>
+        <li>Colaborare cu cercetători academici și parteneri internaționali de proiect</li>
+        <li>Aplicarea metodologiilor geodezice avansate la provocări reale de monitorizare și măsurare</li>
+      </ul>
+      <div class="modal-outcome">🔬 Output de cercetare academică menținut alături de management operațional full-time — demonstrând capacitate excepțională și profunzime de expertiză</div>`,
+    }
+  }
+};
+
+function openModal(id) {
+  const d = MODAL[id][lang];
+  document.getElementById('modal-body').innerHTML =
+    `<div class="modal-tag">${d.tag}</div><h3>${d.title}</h3>${d.body}`;
+  document.getElementById('modal-overlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+/* ── COPY ── */
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = lang === 'en' ? 'Copied!' : 'Copiat!';
+    setTimeout(() => { btn.textContent = orig; }, 2000);
+  });
+}
+
+/* ── NAVBAR ACTIVE ── */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { threshold: 0.4, rootMargin: '-64px 0px -50% 0px' });
+sections.forEach(s => sectionObserver.observe(s));
+
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded', () => {
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // AOS
+  AOS.init({ duration: 650, once: true, offset: 70 });
+
+  // Theme
+  applyTheme(theme);
+
+  // Lang (also inits Typed & Chart)
+  initChart();
+  applyLang(lang);
+
+  // Skill bars observer
+  const skillsSec = document.getElementById('skills-section');
+  if (skillsSec) barObserver.observe(skillsSec);
+
+  // Counter observer
+  const achSec = document.getElementById('achievements');
+  if (achSec) counterObserver.observe(achSec);
+
+  // Navbar scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 80);
+  }, { passive: true });
+
+  // Hamburger
+  const ham = document.getElementById('hamburger');
+  const navEl = document.getElementById('nav-links');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    navEl.classList.toggle('open');
+  });
+  navEl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    ham.classList.remove('open');
+    navEl.classList.remove('open');
+  }));
+
+  // Theme toggle
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    applyTheme(theme === 'dark' ? 'light' : 'dark');
+  });
+
+  // Lang toggle
+  document.getElementById('lang-btn').addEventListener('click', () => {
+    applyLang(lang === 'en' ? 'ro' : 'en');
+  });
+
+  // Contact form
+  const form = document.getElementById('contact-form');
+  const formMsg = document.getElementById('form-msg');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type=submit]');
+    btn.textContent = '...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method:'POST', body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        formMsg.style.display = 'block';
+        formMsg.textContent = lang === 'en' ? '✓ Message sent! I\'ll get back to you soon.' : '✓ Mesaj trimis! Voi reveni în curând.';
+        form.reset();
+      } else {
+        throw new Error();
+      }
+    } catch {
+      formMsg.style.display = 'block';
+      formMsg.style.background = 'rgba(247,129,102,.1)';
+      formMsg.style.borderColor = 'rgba(247,129,102,.3)';
+      formMsg.style.color = '#F78166';
+      formMsg.textContent = lang === 'en' ? 'Something went wrong. Please email directly.' : 'A apărut o eroare. Vă rog contactați direct.';
+    }
+    btn.disabled = false;
+    btn.textContent = T[lang].f_send;
+  });
+});
+</script>
+</body>
+</html>
